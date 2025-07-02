@@ -12,3 +12,41 @@ python3
 ```
 On antibodies-gpu - False  
 On test-gpu - True NVIDIA A100-SXM4-40GB
+
+##RFAntibody issues
+The installation mostly works needed to:
+```
+cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
+```
+To get this scipt in the right place for later
+```
+poetry run pip install biotite
+```
+Then 
+```
+poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5-8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
+```
+Works  
+For 
+```
+poetry run python  /home/src/rfantibody/scripts/rfdiffusion_inference.py \
+    --config-name antibody \
+    antibody.target_pdb=/home/scripts/examples/example_inputs/rsv_site3.pdb \
+    antibody.framework_pdb=/home/scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
+    inference.ckpt_override_path=/home/weights/RFdiffusion_Ab.pt \
+    'ppi.hotspot_res=[T305,T456]' \
+    'antibody.design_loops=[L1:8-13,L2:7,L3:9-11,H1:7,H2:6,H3:5-13]' \
+    inference.num_designs=20 \
+    inference.output_prefix=/home/scripts/examples/example_outputs/ab_des
+```
+The first line needs to be 
+```
+poetry run python  /home/src/rfantibody/rfdiffusion/rfdiffusion_inference.py
+```
+And this /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh - is just the above command. So if run this way edit the path
+Also, nasty - saving the docker image to a tar file does not save the whole state - deleting the image and staring again means rerunning bash /home/include/setup.sh and poetry run pip install biotite
+And for this: 
+```
+/home/scripts/examples/rf2/ab_pdb_example.sh
+```
+Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt
