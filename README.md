@@ -13,7 +13,7 @@ python3
 On antibodies-gpu - False  
 On test-gpu - True NVIDIA A100-SXM4-40GB
 
-##RFAntibody issues
+## RFAntibody issues
 The installation mostly works needed to:
 ```
 cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
@@ -51,7 +51,7 @@ And for this:
 ```
 Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt
 
-##Docker
+## Docker
 Success, worked though the examples - preserve the work
 ```
 exit # exit/stop the docker image
