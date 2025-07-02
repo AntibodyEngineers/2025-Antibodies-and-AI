@@ -50,3 +50,20 @@ And for this:
 /home/scripts/examples/rf2/ab_pdb_example.sh
 ```
 Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt
+
+##Docker
+Success, worked though the examples - preserve the work
+```
+exit # exit/stop the docker image
+docker commit rfantibody rfantibody:latest
+docker save -o rfantibody.tar rfantibody:latest
+docker load -i rfantibody.tar
+docker images # show all images
+docker start -ai rfantiboty # start / enter the container
+# Other useful commands
+docker start rfantibody # just start
+docker exec -it rfantibody /bin/bash # enter
+docker ps # list running containers
+docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody # launch a new container, called rfantibody, from the rfantibody image 
+```
+
