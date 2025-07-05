@@ -32,5 +32,5 @@
   * on a Mac > zip -r -X folder.zip folder
   * -X excludes the pesky Mac files
 
-## Get antibodies bound to GFP
+## [] Get antibodies bound to GFP
 https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/search/?ABtype=All&method=All&species=All&resolution=&rfactor=&antigen=All&ltype=All&constantregion=All&affinity=All&isin_covabdab=All&isin_therasabdab=All&chothiapos=&restype=ALA&field_0=Antigens&keyword_0=green+fluorescent+protein
