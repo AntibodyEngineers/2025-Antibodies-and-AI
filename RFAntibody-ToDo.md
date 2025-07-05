@@ -2,7 +2,7 @@
 
 ## Create a collection file of the designs  
 ### Steps:  
-- [ ] add the HEADER to each pdb file
+- add the HEADER to each pdb file
   * HEADER \t title \t basename (basename must match ID in the JSON file)  
 - put the files in a single directory  
 - add a JSON file dirname.json
