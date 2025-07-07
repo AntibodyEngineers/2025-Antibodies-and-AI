@@ -54,7 +54,7 @@ Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_ove
 ## Misc
 Anything you like to use needs to be in the container. I like less. 
 ```
-apt install less
+apt-get install less
 ```
 
 ## Docker
