@@ -51,6 +51,12 @@ And for this:
 ```
 Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt
 
+## Misc
+Anything you like to use needs to be in the container. I like less. 
+```
+apt install less
+```
+
 ## Docker
 Success, worked though the examples - preserve the work
 ```
