@@ -43,8 +43,12 @@ The first line needs to be
 ```
 poetry run python  /home/src/rfantibody/rfdiffusion/rfdiffusion_inference.py
 ```
-And this /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh - is just the above command. So if run this way edit the path
-Also, nasty - saving the docker image to a tar file does not save the whole state - deleting the image and staring again means rerunning bash /home/include/setup.sh and poetry run pip install biotite
+And this 
+```
+bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
+```
+is just the above command. So if run this way edit the path  
+Also, nasty - saving the docker image to a tar file does not save the whole state - deleting the image and staring again means rerunning bash /home/include/setup.sh and poetry run pip install biotite  
 And for this: 
 ```
 /home/scripts/examples/rf2/ab_pdb_example.sh
