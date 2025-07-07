@@ -49,7 +49,9 @@ And for this:
 ```
 /home/scripts/examples/rf2/ab_pdb_example.sh
 ```
-Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt
+Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
+
+To have a clean starting image - delete existing images, reinstall, run the install commands (+ less, below), edit the ab_pdb_example.sh, and, then save the image. 
 
 ## Misc
 Anything you like to use needs to be in the container. I like less. 
