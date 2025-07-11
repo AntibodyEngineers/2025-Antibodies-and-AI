@@ -1,6 +1,8 @@
 import os
 import glob
 
+# attempt to use pymol for T chaine alingments
+
 input_dir = "path/to/your/pdbs"         # ← Change this to your directory
 output_dir = "aligned_structures"
 os.makedirs(output_dir, exist_ok=True)
