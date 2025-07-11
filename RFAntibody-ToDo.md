@@ -53,11 +53,11 @@ Command lines and tools to prepare data for processing
  - iCn3D
    * installing a local version, icn3D tools (node scripts, python scripts)
    * packaging data
-     ** collection files
+     * collection files
      * json file
      * defining display options, color/space fill T, and color VHHs on (RDMS) scores  
  - open source pymol
-  - installing
-  - import scripts: color, style, central T and VHHs based on scores
- - aligning structures on the T chain for visualization
- - analyzing scores, replicate figures in the paper, but for different tests
+   * installing
+   * import scripts: color, style, central T and VHHs based on scores
+   * aligning structures on the T chain for visualization
+   * analyzing scores, replicate figures in the paper, but for different tests
