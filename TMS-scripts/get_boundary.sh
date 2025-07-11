@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# commands for looking a pdb H/T T/TER boundaries
+
 # for f in "$@"; do
 #   echo "$f"
 #   grep -B 1 '^ATOM.* T ' "$f" | head -n 2
