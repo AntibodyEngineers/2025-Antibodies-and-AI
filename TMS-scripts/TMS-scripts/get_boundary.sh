@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# shell commands to look at boudry lines - H -> T, T->TER for QC
+
+
 # for f in "$@"; do
 #   echo "$f"
 #   grep -B 1 '^ATOM.* T ' "$f" | head -n 2
