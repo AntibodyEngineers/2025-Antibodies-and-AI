@@ -38,11 +38,12 @@ https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/search/?ABtype=All&met
 ## Processing data
 Command lines and tools to prepare data for processing
 - clothia to HLT
-- spliting the file into H (antibody) and T (target) files
+- splitting the file into H (antibody) and T (target) files
 - identifying the hotspots
-- trunccating if necessary
+- trunccating T if necessary
 
  ## Running the analysis
+ - prelim get the example to work
  - getting your molecule to work, organizing directories
  - modifying bash scripts, command lines
  - experimenting with parameters
@@ -50,9 +51,9 @@ Command lines and tools to prepare data for processing
 
  ## Looking at designs
  - iCn3D
-  - installing a local version, icn3D tools (node scripts, python scripts)
-  - packaging data
-   - collection files
+  * installing a local version, icn3D tools (node scripts, python scripts)
+  * packaging data
+   ** collection files
    - json file
    - defining display options, color/space fill T, and color VHHs on (RDMS) scores  
  - open source pymol
