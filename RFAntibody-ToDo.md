@@ -40,7 +40,7 @@ Command lines and tools to prepare data for processing
 - clothia to HLT
 - splitting the file into H (antibody) and T (target) files
 - identifying the hotspots
-- trunccating T if necessary
+- truncating T if necessary
 
  ## Running the analysis
  - prelim get the example to work
