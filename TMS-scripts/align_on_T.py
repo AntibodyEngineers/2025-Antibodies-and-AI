@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# changes the coordinate values for atoms based no the T (target) chain
 
 import os
 import argparse
