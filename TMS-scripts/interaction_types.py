@@ -1,3 +1,8 @@
+# python script to get interaction data from iCn3D
+# adapted from the example script in the iCn3D distro
+# has an issue where the intercations are currently on the T chain, basicaly intramolecular
+# watching it run, it looks okay, but not right
+
 import os
 import sys
 import math
