@@ -23,3 +23,10 @@ Will color chain A with the mycol1 custom color
 >color mycol1, 3WD5_A_7-31  
 Will color named selection 3WD5_A_7-31 with the mycol1 custom color  
 Show styles work in a similar way.   
+
+## PyMol scripts
+PyMol commands can be added to a text file like iCn3D commands or embedded in Python scripts.  
+### Command scripts
+Command script files should have a “.pml” extension. This is needed to open the script file with PyMol from a command line. 
+>pymol myscript.pml  
+>pymol -r myscript.pml  
