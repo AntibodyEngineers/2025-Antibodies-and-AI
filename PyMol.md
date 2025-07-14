@@ -4,7 +4,7 @@ The [PyMol](https://pymol.org) viewer is popular in many structural biology grou
 PyMol runs as local program on personal computers and is available in licensed and open-source versions.
 
 ## Installing
-Mac OS, used homebrew. Follow the instrustions (https://formulae.brew.sh/formula/pymol), updated via brew upgrate pymol. 
+Mac OS, used homebrew. Followd the instructions @ (https://formulae.brew.sh/formula/pymol), updated via brew upgrate pymol. 
 
 ## PyMol commands
 Selections – create named objects that can be displayed in differential ways.  
