@@ -10,6 +10,8 @@ NCBI tool: Used to visualize structures, get interaction data for structures.
 
 ## Python scripts
 
+## Collections
+
 ## iCn3D
 Installing - follow the build instructions, firt step (review) many not be necessary, deprecated stuff  
 After gulp the working icn3d will be in the dist directory (not documented), that can be moved and renamed to icn3d for localhost:8000/icn3d  
