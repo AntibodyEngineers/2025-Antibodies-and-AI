@@ -23,7 +23,10 @@ classDef user fill:#cce5ff,stroke:#3399ff,stroke-width:1.5px;
 classDef home fill:#d5f5e3,stroke:#27ae60,stroke-width:1.5px;
 classDef docker fill:#f9d6e2,stroke:#c0392b,stroke-width:1.5px;
 classDef data fill:#fceabb,stroke:#f39c12,stroke-width:1.5px;
+classDef access fill:#e0e0ff,stroke:#8888ff,stroke-width:1px;
 ```
+
+
 ### Installation
 1. Follow the steps listed at [RFAntibody GitHub page](https://github.com/RosettaCommons/RFantibody)
 2. Make additions/changes specified on [RFAntibody-notes](RFAntibody-notes.md#rfantibody-issues)
