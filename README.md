@@ -14,6 +14,9 @@ A[<b>Jetstream2</b><br/>GPU Instance<br/>32 core / 117GB RAM 300GB disk]:::gpu
 A --> B2[User 2]:::user --> C2[Home dir]:::home --> D2["RFAntibody<br/>(Docker)"]:::docker --> E2[/data and code/]:::data
 A --> B3[User 3]:::user --> C3[Home dir]:::home --> D3["RFAntibody<br/>(Docker)"]:::docker --> E3[/data and code/]:::data
 
+SSH1[SSH]:::access --> B
+Jupyter1[Jupyter Notebook]:::access --> B
+
 %% Style definitions
 classDef gpu fill:#ffefcc,stroke:#e8b800,stroke-width:2px;
 classDef user fill:#cce5ff,stroke:#3399ff,stroke-width:1.5px;
