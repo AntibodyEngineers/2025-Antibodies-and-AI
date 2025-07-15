@@ -53,10 +53,11 @@ bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
 ```
 is just the above command. So if run this way edit the path.
 
-5. And for the script /home/scripts/examples/rf2/ab_pdb_example.sh calls a yaml file that uses a non-exstant weights file.  
-> Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
+5. The script, /home/scripts/examples/rf2/ab_pdb_example.sh calls a yaml file that uses a non-exstant weights file.  
+> Edit /home/src/rfantibody/rf2/config/base.yaml
+> Replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
  
-6. Anything you like to use needs to be in the container. I like less. 
+6. Anything you like to use needs to be in the container. I like less instead of more. 
 ```
 apt-get install less
 ```
