@@ -2,7 +2,7 @@
 Updates and new projects in the Antibody Engineering Hackahons
 
 ## Compute Resources
-<div align="center"><strong>General Architecture</strong></div>
+### General Architecture
 
 Due to the nature of docker images/container and directories, each person running AI tests will have their own docker directory in their home directory. This way they can organize their files and scripts independently of others. 
 
@@ -21,6 +21,9 @@ classDef home fill:#d5f5e3,stroke:#27ae60,stroke-width:1.5px;
 classDef docker fill:#f9d6e2,stroke:#c0392b,stroke-width:1.5px;
 classDef data fill:#fceabb,stroke:#f39c12,stroke-width:1.5px;
 ```
+### Installation
+1. Follow the steps listed at [RFAntibody GitHub page](https://github.com/RosettaCommons/RFantibody)
+2. Make additions/changes specified on [RFAntibody-notes](RFAntibody-notes.md)
 
 
 
