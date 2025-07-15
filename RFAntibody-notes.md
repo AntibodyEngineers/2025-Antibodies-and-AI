@@ -19,19 +19,19 @@ nvidia-smi
 
 ## RFAntibody issues
 The installation mostly works needed to:
-```
-cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
-```
-To get this scipt in the right place for later
+1. Install biotite
 ```
 poetry run pip install biotite
 ```
-Then 
+2. Copy rfdiffusion_inference.py to a source directory, which is called by other scripts
+```
+cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
+```
+3. The example "# From inside of the rfantibody container, poetry run python /home/scripts/util/chothia_to_HLT.py -inpdb mychothia.pdb -outpdb myHLT.pdb is incorrect the correct usage is:
 ```
 poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5-8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
 ```
-Works  
-For 
+4. The example command below is also incorrect.  
 ```
 poetry run python  /home/src/rfantibody/scripts/rfdiffusion_inference.py \
     --config-name antibody \
@@ -51,18 +51,12 @@ And this
 ```
 bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
 ```
-is just the above command. So if run this way edit the path  
-Also, nasty - saving the docker image to a tar file does not save the whole state - deleting the image and staring again means rerunning bash /home/include/setup.sh and poetry run pip install biotite  
-And for this: 
-```
-/home/scripts/examples/rf2/ab_pdb_example.sh
-```
-Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
+is just the above command. So if run this way edit the path.
 
-To have a clean starting image - delete existing images, reinstall, run the install commands (+ less, below), edit the ab_pdb_example.sh, and, then save the image. 
-
-## Misc
-Anything you like to use needs to be in the container. I like less. 
+5. And for the script /home/scripts/examples/rf2/ab_pdb_example.sh calls a yaml file that uses a non-exstant weights file.  
+> Edit /home/src/rfantibody/rf2/config/base.yaml to replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
+ 
+6. Anything you like to use needs to be in the container. I like less. 
 ```
 apt-get install less
 ```
