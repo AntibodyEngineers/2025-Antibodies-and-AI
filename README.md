@@ -1,5 +1,8 @@
 # 2025-Antibodies-and-AI
 ## Project Goals
+1. Select Antibody for modeling
+2. Install and run RFAntibody
+3. Evaluate designs
 ## Team Members
 ## Compute Resources
 ### General Architecture
