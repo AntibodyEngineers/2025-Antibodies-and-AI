@@ -43,9 +43,9 @@ classDef spacer fill:transparent,stroke:transparent;
   class Access clear
   class VM box
 %% links
-click D1 "RFAntibody-notes.md"
-click D2 "RFAntibody-notes.md" "RFAntibody notes"
-click D3 "RFAntibody-notes.md" "RFAntibody notes"
+click D1 "https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/RFAntibody-notes.md" "RFAntibody notes"
+click D2 "[RFAntibody-notes.md](https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/RFAntibody-notes.md)" "RFAntibody notes"
+click D3 "[RFAntibody-notes.md](https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/RFAntibody-notes.md)" "RFAntibody notes"
 ```
 
 
