@@ -10,7 +10,7 @@ Due to the nature of docker images/container and directories, each person runnin
 flowchart LR
 
 %% Access methods to VM
-subgraph ide0 [ ]
+subgraph ide0 [Access]
   direction LR
   SSH1[SSH]:::access --> ACC[Credentials]:::spacer
   Jupyter1[Jupyter Notebook]:::access --> ACC
