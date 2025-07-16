@@ -1,8 +1,17 @@
 # 2025-Antibodies-and-AI
-## Project Goals
-1. Select Antibody for modeling
+## Overview
+### Goals
+1. Select antibodies for modeling
 2. Install and run RFAntibody
 3. Evaluate designs
+   
+### Outcomes
+1. Learn about antibody/antigen recognition (paratopes & epitopes)
+2. Working with docker images and commands
+3. Preparing data for RFAntibody
+4. Analyzing protein structure designs
+5. Learning about RFAntibody parameters specifically and AI issue in general
+
 ## Team Members
 ## Compute Resources
 ### General Architecture
