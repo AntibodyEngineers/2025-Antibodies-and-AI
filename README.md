@@ -9,16 +9,19 @@ Due to the nature of docker images/container and directories, each person runnin
 ```mermaid
 flowchart LR
 
-subgraph ide0[ ]
+%% Access methods to VM
+subgraph ide0 [ ]
   direction LR
-  SSH1[SSH]:::access --> ide1[Virtual Machine]
-  Jupyter1[Jupyter Notebook]:::access --> ide1[Virtual Machine]
+  SSH1[SSH]:::access --> ACC[Credentials]:::spacer
+  Jupyter1[Jupyter Notebook]:::access --> ACC
+  ACC --> ide1
 end
 
-subgraph ide1[Virtual Machine] 
+%% VM and user structure
+subgraph ide1 [Virtual Machine]
   direction TB
-  A[<b>Jetstream2</b><br/>GPU Instance<br/>32 core / 117GB RAM 300GB disk]:::gpu
-    --> B[User 1]:::user --> C[Home dir]:::home --> D["RFAntibody<br/>(Docker)"]:::docker --> E[/data and code/]:::data
+  A["Jetstream2<br/>GPU Instance<br/>32 core / 117GB RAM<br/>300GB disk"]:::gpu
+  A --> B[User 1]:::user --> C[Home dir]:::home --> D["RFAntibody<br/>(Docker)"]:::docker --> E[/data and code/]:::data
   A --> B2[User 2]:::user --> C2[Home dir]:::home --> D2["RFAntibody<br/>(Docker)"]:::docker --> E2[/data and code/]:::data
   A --> B3[User 3]:::user --> C3[Home dir]:::home --> D3["RFAntibody<br/>(Docker)"]:::docker --> E3[/data and code/]:::data
 end
@@ -31,6 +34,10 @@ classDef docker fill:#f9d6e2,stroke:#c0392b,stroke-width:1.5px;
 classDef data fill:#fceabb,stroke:#f39c12,stroke-width:1.5px;
 classDef access fill:#e0e0ff,stroke:#8888ff,stroke-width:1px;
 classDef clear fill:#FFFFFF00,stroke:#FFFFFF00;
+classDef box fill:#FFFFFF00,stroke:#333;
+classDef spacer fill:transparent,stroke:transparent;
+  class ide0 clear
+  class ide1 box
 ```
 
 
