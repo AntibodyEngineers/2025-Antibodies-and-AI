@@ -22,7 +22,7 @@ Due to the nature of docker images/container and directories, each person runnin
 flowchart TB
 
 %% Access methods to VM
-subgraph Access ["<b>Access Methods</b>"]
+subgraph Access ["<b>Access Methods</b><"]
   direction TB
   SSH1[&emsp;&emsp;&emsp;SSH&emsp;&emsp;&emsp;]:::access
   Jup1["Jupyter Notebook"]:::access
