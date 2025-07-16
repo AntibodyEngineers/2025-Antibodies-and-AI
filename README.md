@@ -22,7 +22,7 @@ Due to the nature of docker images/container and directories, each person runnin
 flowchart TB
 
 %% Access methods to VM
-subgraph Access [ Access Methods ]
+subgraph Access ["<b>Access Methods</b>"]
   direction TB
   SSH1[&emsp;&emsp;&emsp;SSH&emsp;&emsp;&emsp;]:::access
   Jup1["Jupyter Notebook"]:::access
@@ -34,7 +34,7 @@ Jup1 ==> ACC
 ACC ==> VM
 
 %% VM and user structure
-subgraph VM [Virtual Machine]
+subgraph VM [<p>Virtual Machine</p>]
   direction TB
   A["Jetstream2<br/>GPU Instance<br/>32 core / 117GB RAM<br/>300GB disk"]:::gpu
   A --> B[User 1]:::user --> C[Home dir]:::home --> D1["RFAntibody<br/>(Docker)"]:::docker --> E[/data and code/]:::data
