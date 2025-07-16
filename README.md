@@ -29,9 +29,9 @@ subgraph Access [ Access Methods ]
 end
 
 %% Connect Access to next block
-SSH1 --> ACC[Credentials]:::spacer
-Jup1 --> ACC
-ACC --> VM
+SSH1 ==> ACC[Credentials]:::spacer
+Jup1 ==> ACC
+ACC ==> VM
 
 %% VM and user structure
 subgraph VM [Virtual Machine]
