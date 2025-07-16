@@ -4,7 +4,7 @@ Updates and new projects in the Antibody Engineering Hackahons
 ## Compute Resources
 ### General Architecture
 
-Due to the nature of docker images/container and directories, each person running AI tests will have their own docker directory in their home directory. This way they can organize their files and scripts independently of others. 
+Due to the nature of docker images/container and directories, each person running AI tests will have their own docker directory in their home directory. This way they can organize their files and scripts independently of others. Resources will be accessed through SSH and Jupyter Notebooks. Details regarding credentials and IP addressed will be posted to slack. 
 
 ```mermaid
 flowchart TB
