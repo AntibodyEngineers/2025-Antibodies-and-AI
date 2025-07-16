@@ -7,18 +7,18 @@ Updates and new projects in the Antibody Engineering Hackahons
 Due to the nature of docker images/container and directories, each person running AI tests will have their own docker directory in their home directory. This way they can organize their files and scripts independently of others. 
 
 ```mermaid
-flowchart LR
+flowchart TB
 
 %% Access methods to VM
 subgraph Access [ Access Methods ]
   direction TB
-  SSH1[SSH]:::access
-  Jupyter1[Jupyter Notebook]:::access
+  SSH1[&emsp;&emsp;&emsp;SSH&emsp;&emsp;&emsp;]:::access
+  Jup1["Jupyter Notebook"]:::access
 end
 
 %% Connect Access to next block
 SSH1 --> ACC[Credentials]:::spacer
-Jupyter1 --> ACC
+Jup1 --> ACC
 ACC --> VM
 
 %% VM and user structure
