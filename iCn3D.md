@@ -13,10 +13,14 @@ Collections (developed by Digital World Biology) are a way to import and interac
 Additionally, a single pdb, or pdb.gz file can be uploaded and added to a collection.
 
 Collection json files specify a "collectionTitle", "collectionDescription", and a list of "structures". Each structure includes:
-- an id: header-name.pdb, or datbase id
+- an id: header-name, or datbase id
 - a titile: text
 - a description: text
 - commands: comma separated list of iCn3D commands
+
+> [!NOTE]
+> **pdb files in a collection must have a HEADER line with a basename that matches the unambiguous portion of the filename**  
+> HEADER header-name 
   
 For example,this file:
 ```json
@@ -45,11 +49,12 @@ For example,this file:
   ]
 }
 ```
-(above was formatted using https://jsonformatter.org/)
-
 Will load the structures with the respective HEADER lines: HEADER nb_gfp_des_1_dldesign_0_best, and HEADER nb_gfp_des_2_dldesign_0_best. The ids will be listed in the Collection Viewer window. When an id is clicked, the interactions between the H and T chains are slected and displayed (first command), along with an intercation graphic (second command). 
 
 ![collection showing a selected structure and its interchain interactions](/images/icn3d-collection.png?raw=true)
+
+> [!TIP]
+> Fighting with tabs & spaces from a code editor? Paste into https://jsonformatter.org/ to reformat
 
 ## Localized version
 iCn3D can also be run on local computers. The code can be optained by running:
