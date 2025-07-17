@@ -9,12 +9,15 @@ Collections (developed by Digital World Biology) are a way to import and interac
 1. A list of PDB IDs in a json file
 2. A zip compressed directory of gz compressed pdb file
 3. A zip compressed directory of pdb files listed in a json file
+   
 Additionally, a single pdb, or pdb.gz file can be uploaded and added to a collection.
+
 Collection json files specify a "collectionTitle", "collectionDescription", and a list of "structures". Each structure includes:
 - an id: header-name.pdb, or datbase id
 - a titile: text
 - a description: text
 - commands: comma separated list of iCn3D commands
+  
 For example,this file:
 ```
 {
