@@ -10,97 +10,96 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
 ### Summary of steps
 
 1. **Install RFAntibody**
-   ```bash
-   git clone https://github.com/RosettaCommons/RFantibody.git
-   ```
+```bash
+git clone https://github.com/RosettaCommons/RFantibody.git
+```
 
 2. **Run download_weights**
-   ```bash
-   bash include/download_weights.sh
-   ```
+```bash
+bash include/download_weights.sh
+```
 
 3. **Add user to Docker group**
-   ```bash
-   sudo usermod -aG docker $USER
-   ```
+```bash
+sudo usermod -aG docker $USER
+```
 
 4. **Exit terminal & re-login**
 
 5. **Change directory to RFAntibody**
-   ```bash
-   cd RFAntibody
-   ```
+```bash
+cd RFAntibody
+```
 
 6. **Build Docker image**
-   ```bash
-   docker build -t rfantibody .
-   ```
-   With a multiuser system images and containers should specify the users image and container.
-    ```bash
-   docker build -t rfantibody_username .
-   ```
+```bash
+docker build -t rfantibody .
+```
+With a multiuser system images and containers should specify the users image and container.
+```bash
+docker build -t rfantibody_username .
+```
     
 8. **Start the Docker image**
-   ```bash
-   docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
-   ```
-   With user specification
-   ```bash
-   docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it          rfantibody_username
-   ```
+```bash
+docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
+```
+With user specification
+```bash
+docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it          rfantibody_username
+```
 
 10. **Set up the Python environment**
-    ```bash
-    bash /home/include/setup.sh
-    ```
+```bash
+bash /home/include/setup.sh
+```
 
 11. **Install Biotite**
 > [!IMPORTANT]
-> Not included in the RFAntibody instructions   
-   ```bash
-   poetry run pip install biotite
-   ```
+> Not included in the RFAntibody instructions
+```bash
+poetry run pip install biotite
+```
 > [!TIP]
-> Optional: inside the container, install `less` (instead of `more`)
+> Optional: inside the container, install `less` (instead of `more`)  
 > any other software must be installed in the container as well
-   ```bash
-   apt-get update && apt-get install -y less
-   ```
+```bash
+apt-get update && apt-get install -y less
+```
   
 11. **Copy `rfdiffusion_inference.py` to the source directory**
 > [!IMPORTANT]
-> Found in the RFAntibody issues
-    ```bash
-    cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
-    ```
+> Found in the RFAntibody issues  
+```bash
+cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
+```
 
 13. **Test `chothia2HLT.py`**
 > [!IMPORTANT]
-> RFAntibody instructions were incorrect
-    ```bash
-    poetry run python /home/scripts/util/chothia2HLT.py \
-      scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
-      --heavy H --light L --target T --output myHLT.pdb
-    ```
+> RFAntibody instructions were incorrect  
+
+```bash
+poetry run python /home/scripts/util/chothia2HLT.py \
+  scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
+  --heavy H --light L --target T --output myHLT.pdb
+```
 
 15. **Test RFdiffusion adjust – the first line (see item 4 below)**
 
 16. **Test ProteinMPNN**
-    ```bash
-    bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
-    ```
+```bash
+bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
+```
 
 17. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see script fixes)**
 > [!IMPORTANT]
 > RFAntibody base.yaml specifies a **non‑existent** weights file.
 
 18. **Test RF2**
-    ```bash
-    bash /home/scripts/examples/rf2/ab_pdb_example.sh
-    ```
-
+```bash
+bash /home/scripts/examples/rf2/ab_pdb_example.sh
+```
 ---
-
 ## Details / Notes
 
 The installation mostly worked but required:
