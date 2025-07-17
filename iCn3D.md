@@ -4,6 +4,17 @@
 ## Web version
 The web version is the "standard" way to run iCn3D. It hass all the features and can import files from NCBI servers as well as upload local files including collection files. Local iCn3D is needed for scripting application and processing data via node.js or python scripts as described below. 
 
+## Collections
+Collections (developed by Digital World Biology) are a way to import and interact with annotated sets of molecular structures in iCn3D. iCn3D support three kinds of collections:
+1. A list of PDB IDs in a json file
+2. A zip compressed directory of gz compressed pdb file
+3. A zip compressed directory of pdb files listed in a json file
+Additionally, a single pdb, or pdb.gz file can be uploaded and added to a collection.
+Collection json files specify a "collectionTitle", "collectionDescription", and a list of "structures". Each structure includes:
+- an id: header-name.pdb, or datbase id
+- a titile: text
+- a 
+
 ## Localized version
 iCn3D can also be run on local computers. The code can be optained by running:
 ```bash
@@ -75,11 +86,5 @@ brew install geckodriver
 Brew install can be skipped if geckodriver is already in PATH — webdriver-manager can handle it too (ChatGPT).
 The example, [RFAb_Interaction.py](/TMS-scripts/RFAb_Interaction.py) script can be found in the [TMS-scripts](/TMS-scripts) folder. 
 
-## Collections
 
-## iCn3D
-Installing - follow the build instructions, firt step (review) many not be necessary, deprecated stuff  
-After gulp the working icn3d will be in the dist directory (not documented), that can be moved and renamed to icn3d for localhost:8000/icn3d  
-Node scripts, Jiyao made a new release to fix an issue - install the components in the direcory where stuff will be run  
-Copy js scripts to this location
 
