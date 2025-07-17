@@ -45,6 +45,7 @@ For example,this file:
   ]
 }
 ```
+(above was formatted using https://jsonformatter.org/)
 
 Will load the structures with the respective HEADER lines: HEADER nb_gfp_des_1_dldesign_0_best, and HEADER nb_gfp_des_2_dldesign_0_best. The ids will be listed in the Collection Viewer window. When an id is clicked, the interactions between the H and T chains are slected and displayed (first command), along with an intercation graphic (second command). 
 
