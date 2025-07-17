@@ -9,8 +9,8 @@
 1. Learn about antibody/antigen recognition (paratopes & epitopes)
 2. Gain experience working with docker images and commands
 3. Work with pdb files to prepare data for RFAntibody
-4. Confirm desings by analyzing generated protein sequences and structures
-5. Develop an understanding of RFAntibody parameters specifically and AI issue in general
+4. Evaluate designs by analyzing generated protein sequences and structures
+5. Develop an understanding of RFAntibody parameters specifically, and AI issues in general
 
 ## Team Members
 ## Compute Resources
