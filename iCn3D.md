@@ -7,9 +7,11 @@
 iCn3D can also be run on local computers. The code can be optained by running:
 ```bash
 git clone https://github.com/ncbi/icn3d.git
+```
+Then
+```
 cd icn3d
 ```
-
 ### Installing
 The current instructions in the iCn3D GitHub page are out of date (npm config set -g production false is deprecated, and delete package-lock.json is assumed to be rm packag-lock.json) The following build commands work:
 ```bash
