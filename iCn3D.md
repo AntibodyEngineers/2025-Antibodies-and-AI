@@ -25,20 +25,24 @@ For example,this file:
 	"collectionDescription": "Designs from RFAntibody",
 	"structures": [
 	  {
-		"id": "nb_gfp_des_1_dldesign_0_best",
-		"title": "Des 1",
-		"description": "<p>first in list</p>",
-    "commands": ["display interaction 3d | stru_H stru_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5",
-                "line graph interaction pairs | stru_H stru_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5"
-                ]
+			"id": "nb_gfp_des_1_dldesign_0_best",
+			"title": "Des 1",
+			"description": "<p>first in list</p>",
+    	"commands":
+				[
+				"display interaction 3d | stru_H stru_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5",
+        "line graph interaction pairs | stru_H stru_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5"
+				]
 	  },
     {
 		"id": "nb_gfp_des_2_dldesign_0_best",
 		"title": "Des 2",
 		"description": "<p>first in list</p>",
-    "commands": ["display interaction 3d | stru2_H stru2_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5",
-                "line graph interaction pairs | stru2_H stru2_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5"
-                ]
+    "commands":
+			[
+				"display interaction 3d | stru2_H stru2_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5",
+        "line graph interaction pairs | stru2_H stru2_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5"
+       ]
 	  }
 	]
 }
