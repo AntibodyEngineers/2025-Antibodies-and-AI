@@ -1,133 +1,200 @@
 # RFAntibody Notes
-Part of the 2025 Hackathon AI work will focuse on using the Rosetta Commons RFAntibody. RFAntibody runs in a docker image and requires a GPU. GPU testing, installation, testing notes, and docker commands are described below. 
+
+Part of the 2025 Hackathon AI work will **focus** on using the Rosetta Commons **RFAntibody**.  
+RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installation, testing notes, and Docker commands are described below.
+
+---
 
 ## RFAntibody Installation
-Summary of steps:
-1. Install RFAntibody
-   ```
+
+### Summary of steps
+
+1. **Install RFAntibody**
+   ```bash
    git clone https://github.com/RosettaCommons/RFantibody.git
    ```
-3. Run download_weights
-   ```
+
+2. **Run download_weights**
+   ```bash
    bash include/download_weights.sh
    ```
-5. Sudo usermod
-   ```
+
+3. **Add user to Docker group**
+   ```bash
    sudo usermod -aG docker $USER
    ```
-7. Exit terminal & relogin
-8. cd to RFAntibody
-9. Build docker image
+
+4. **Exit terminal & relogin**
+
+5. **Change directory to RFAntibody**
+   ```bash
+   cd RFAntibody
    ```
+
+6. **Build Docker image**
+   ```bash
    docker build -t rfantibody .
-   ``` 
-10. Start the docker image
-    ```
-    docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
-    ```
-11. Setup Pyton Env
-    ```
-    bash /home/include/setup.sh
-    ```
-12. Install biotite
-    ```
-    poetry run pip install biotite
-    ```
-13. Copy rfdiffusion_inference to src dir
-    ```
+   ```
+
+7. **Start the Docker image**
+   ```bash
+   docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
+   ```
+
+8. **Set up the Python environment**
+   ```bash
+   bash /home/include/setup.sh
+   ```
+
+9. **Install Biotite**
+   ```bash
+   poetry run pip install biotite
+   ```
+
+10. **Copy `rfdiffusion_inference.py` to the source directory**
+    ```bash
     cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
     ```
-14. Test chothia2HLT.py
+
+11. **Test `chothia2HLT.py`**
+    ```bash
+    poetry run python /home/scripts/util/chothia2HLT.py \
+      scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
+      --heavy H --light L --target T --output myHLT.pdb
     ```
-    poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5- 8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
-    ```
-15. Test RFdiffusion
-    adjust - the first line (see item 4 below)
-16. Test ProteinMPNN
-    ```
+
+12. **Test RFdiffusion adjust – the first line (see item 4 below)**
+
+13. **Test ProteinMPNN**
+    ```bash
     bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
     ```
-17. Fix /home/src/rfantibody/rf2/config/base.yaml (see item 5 below)
-18. Test RF2
-    ```
+
+14. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see item 5 below)**
+
+15. **Test RF2**
+    ```bash
     bash /home/scripts/examples/rf2/ab_pdb_example.sh
     ```
-    <hr>
-    
-### Details / Notes   
-The installation mostly works needed to:
-1. Install biotite
-```
-poetry run pip install biotite
-```
-2. Copy rfdiffusion_inference.py to a source directory, which is called by other scripts
-```
-cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
-```
-3. The example "# From inside of the rfantibody container, poetry run python /home/scripts/util/chothia_to_HLT.py -inpdb mychothia.pdb -outpdb myHLT.pdb is incorrect the correct usage is:
-```
-poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5-8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
-```
-4. The example command below is also incorrect.  
-```
-poetry run python  /home/src/rfantibody/scripts/rfdiffusion_inference.py \
-    --config-name antibody \
-    antibody.target_pdb=/home/scripts/examples/example_inputs/rsv_site3.pdb \
-    antibody.framework_pdb=/home/scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
-    inference.ckpt_override_path=/home/weights/RFdiffusion_Ab.pt \
-    'ppi.hotspot_res=[T305,T456]' \
-    'antibody.design_loops=[L1:8-13,L2:7,L3:9-11,H1:7,H2:6,H3:5-13]' \
-    inference.num_designs=20 \
-    inference.output_prefix=/home/scripts/examples/example_outputs/ab_des
-```
-The first line needs to be 
-```
-poetry run python  /home/src/rfantibody/rfdiffusion/rfdiffusion_inference.py
-```
-And this 
-```
-bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
-```
-is just the above command. So if run this way edit the path.
 
-5. The script, /home/scripts/examples/rf2/ab_pdb_example.sh calls a yaml file that uses a non-exstant weights file.  
-> Edit /home/src/rfantibody/rf2/config/base.yaml  
-> Replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
- 
-6. Anything you like to use needs to be in the container. I like less instead of more. 
-```
-apt-get install less
-```
+---
+
+## Details / Notes
+
+The installation mostly worked but required:
+
+- **Biotite**
+  ```bash
+  poetry run pip install biotite
+  ```
+
+- **Copy `rfdiffusion_inference.py`** to a source directory (called by other scripts):
+  ```bash
+  cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
+  ```
+
+- The example below is **incorrect**:
+  ```bash
+  # From inside the rfantibody container:
+  poetry run python /home/scripts/util/chothia_to_HLT.py -inpdb mychothia.pdb -outpdb myHLT.pdb
+  ```
+  Correct usage:
+  ```bash
+  poetry run python /home/scripts/util/chothia2HLT.py \
+    scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
+    --heavy H --light L --target T --output myHLT.pdb
+  ```
+
+- Another incorrect example:
+  ```bash
+  poetry run python /home/src/rfantibody/scripts/rfdiffusion_inference.py \
+      --config-name antibody \
+      antibody.target_pdb=/home/scripts/examples/example_inputs/rsv_site3.pdb \
+      antibody.framework_pdb=/home/scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
+      inference.ckpt_override_path=/home/weights/RFdiffusion_Ab.pt \
+      'ppi.hotspot_res=[T305,T456]' \
+      'antibody.design_loops=[L1:8-13,L2:7,L3:9-11,H1:7,H2:6,H3:5-13]' \
+      inference.num_designs=20 \
+      inference.output_prefix=/home/scripts/examples/example_outputs/ab_des
+  ```
+
+  **First line must be:**
+  ```bash
+  poetry run python /home/src/rfantibody/rfdiffusion/rfdiffusion_inference.py
+  ```
+
+- Script fix:
+  ```bash
+  bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
+  ```
+  is just the command above; adjust the path if you run it.
+
+- `/home/scripts/examples/rf2/ab_pdb_example.sh` points to a **non‑existent** weights file.  
+  Edit `/home/src/rfantibody/rf2/config/base.yaml` and replace:
+
+  ```
+  /home/weights/RFab_overall_best.pt
+  ```
+  with
+  ```
+  /home/weights/RF2_ab.pt
+  ```
+
+- Optional: inside the container, install `less` (instead of `more`):
+  ```bash
+  apt-get update && apt-get install -y less
+  ```
+
+---
 
 ## Docker
-Success, worked though the examples - preserve the work
-```
-exit # exit/stop the docker image
+
+Worked through the examples; to **preserve** the work:
+
+```bash
+exit                               # exit/stop the Docker container
 docker commit rfantibody rfantibody:latest
 docker save -o rfantibody.tar rfantibody:latest
 docker load -i rfantibody.tar
-docker images # show all images
-docker start -ai rfantiboty # start / enter the container
-# Other useful commands
-docker start rfantibody # just start
-docker exec -it rfantibody /bin/bash # enter
-docker ps # list running containers
-docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody # launch a new container, called rfantibody, from the rfantibody image
+docker images                      # show all images
+docker start -ai rfantibody        # start + attach
 ```
-## Other notes
-### GPU
-RFAntibody requires a GPU. Started with last year's instance, but, despite a positive result from ">nvidia-smi' determined it was not connecing to the Jetstream GPUs. Tested by making a fresh Ubuntu22 instance (tried Ubuntu24, but got lots of errors on initialization).
 
-To test: install torch and in the phython3 command env run:
+**Other useful commands**
+
+```bash
+docker start rfantibody
+docker exec -it rfantibody /bin/bash
+docker ps
+docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
 ```
+
+---
+
+## GPU
+
+RFAntibody **requires** a GPU.
+
+- Last year’s instance showed `nvidia-smi`, but was **not connecting** to Jetstream GPUs.  
+- Tested a fresh Ubuntu 22 instance (Ubuntu 24 produced many init errors).
+
+**To test CUDA availability**
+
+```bash
 python3 -m pip install torch
 python3
->>> import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
-```
-On antibodies-gpu, False was returned  
-On test-gpu, True NVIDIA A100-SXM4-40GB was returned
-Both antibodies-gpu and test-gpu returnded a positive status with:
-```
-nvidia-smi
+>>> import torch
+>>> print(
+...     torch.cuda.is_available(),
+...     torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU"
+... )
 ```
 
+| Host            | torch.cuda.is_available | Device Name               |
+|-----------------|------------------------|---------------------------|
+| antibodies-gpu  | False                  | —                         |
+| test-gpu        | True                   | NVIDIA A100‑SXM4‑40GB     |
+
+Both hosts reported healthy GPUs with `nvidia-smi`, but only **test‑gpu** was usable by PyTorch.
+
+---
