@@ -20,7 +20,7 @@ Collection json files specify a "collectionTitle", "collectionDescription", and 
   
 For example,this file:
 ```json
-{
+{ 
 	"collectionTitle": "RF designs",
 	"collectionDescription": "Designs from RFAntibody",
 	"structures": [
