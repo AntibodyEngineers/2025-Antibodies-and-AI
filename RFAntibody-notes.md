@@ -17,7 +17,58 @@ Both antibodies-gpu and test-gpu returnded a positive status with:
 nvidia-smi
 ```
 
-## RFAntibody issues
+## RFAntibody Installation
+Summary of steps:
+1. Install RFAntibody
+   ```
+   git clone https://github.com/RosettaCommons/RFantibody.git
+   ```
+3. Run download_weights
+   ```
+   bash include/download_weights.sh
+   ```
+5. Sudo usermod
+   ```
+   sudo usermod -aG docker $USER
+   ```
+7. Exit terminal, relogin,
+8. cd to RFAntibody
+9. Build docker image
+   ```
+   docker build -t rfantibody .
+   ``` 
+10. Start the docker image
+    ```
+    docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
+    ```
+11. Setup Pyton Env
+    ```
+    bash /home/include/setup.sh
+    ```
+12. Install biotite
+    ```
+    poetry run pip install biotite
+    ```
+13. Copy rfdiffusion_inference to src dir
+    ```
+    cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
+    ```
+14. Test chothia2HLT.py
+    ```
+    poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5- 8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
+    ```
+15. Test RFdiffusion
+    adjust - the first line ([see below](example-command))
+16. Test ProteinMPNN
+    ```
+    bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
+    ```
+17. Fix /home/src/rfantibody/rf2/config/base.yaml
+18. Test RF2
+    ```
+    bash /home/scripts/examples/rf2/ab_pdb_example.sh
+    ```
+### Details / Notes   
 The installation mostly works needed to:
 1. Install biotite
 ```
@@ -54,7 +105,7 @@ bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
 is just the above command. So if run this way edit the path.
 
 5. The script, /home/scripts/examples/rf2/ab_pdb_example.sh calls a yaml file that uses a non-exstant weights file.  
-> Edit /home/src/rfantibody/rf2/config/base.yaml
+> Edit /home/src/rfantibody/rf2/config/base.yaml  
 > Replace /home/weights/RFab_overall_best.pt with /home/weights/RF2_ab.pt  
  
 6. Anything you like to use needs to be in the container. I like less instead of more. 
