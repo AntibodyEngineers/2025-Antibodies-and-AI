@@ -1,21 +1,5 @@
 # RFAntibody Notes
-Part of the 2025 Hackathon AI work will focuse on using the Rosetta Commons RFAntibody. It run in a docker image and requires a GPU. GPU testing, installation, testing notes, and docker commands are described below. 
-
-## GPU
-RFAntibody requires a GPU. Started with last year's instance, but determined it was not connecing to the Jetstream GPUs, so a new instance was created.  
-Tested by making a new one (Ubuntu22 [tried Ubuntu24, but got lots of errors on initialization]).  
-To test: install torch and in the phython3 command env run:
-```
-python3 -m pip install torch
-python3
->>> import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
-```
-On antibodies-gpu, False was returned  
-On test-gpu, True NVIDIA A100-SXM4-40GB was returned
-Both antibodies-gpu and test-gpu returnded a positive status with:
-```
-nvidia-smi
-```
+Part of the 2025 Hackathon AI work will focuse on using the Rosetta Commons RFAntibody. RFAntibody runs in a docker image and requires a GPU. GPU testing, installation, testing notes, and docker commands are described below. 
 
 ## RFAntibody Installation
 Summary of steps:
@@ -130,3 +114,20 @@ docker exec -it rfantibody /bin/bash # enter
 docker ps # list running containers
 docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody # launch a new container, called rfantibody, from the rfantibody image
 ```
+## Other notes
+### GPU
+RFAntibody requires a GPU. Started with last year's instance, but, despite a positive result from ">nvidia-smi' determined it was not connecing to the Jetstream GPUs. Tested by making a fresh Ubuntu22 instance (tried Ubuntu24, but got lots of errors on initialization).
+
+To test: install torch and in the phython3 command env run:
+```
+python3 -m pip install torch
+python3
+>>> import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
+```
+On antibodies-gpu, False was returned  
+On test-gpu, True NVIDIA A100-SXM4-40GB was returned
+Both antibodies-gpu and test-gpu returnded a positive status with:
+```
+nvidia-smi
+```
+
