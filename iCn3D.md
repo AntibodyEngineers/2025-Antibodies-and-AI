@@ -2,6 +2,7 @@
 [iCn3d](https://www.ncbi.nlm.nih.gov/Structure/icn3d/), developed and supported by [NCBI](https://www.ncbi.nlm.nih.gov/)(The National Center for Biotechnology Information) is a web-based system that is used to visualize structures and their sequence data. iCn3D has many advanced features, such as getting interaction data for structures, that can be used to evaluate the the designs created by RFAntibody. It can be run as a web application from the NCBI server using data imported from a [collection](#collections) or on desktop computers with code obtained from the [iCn3D GitHub repository](https://github.com/ncbi/icn3d).
 
 ## Web version
+The web version is the "standard" way to run iCn3D. It hass all the features and can import files from NCBI servers as well as upload local files including collection files. Local iCn3D is needed for scripting application and processing data via node.js or python scripts as described below. 
 
 ## Localized version
 iCn3D can also be run on local computers. The code can be optained by running:
@@ -25,16 +26,33 @@ open full.html
 ```
 The last two steps are to test for a successful build. The working local version of icn3d is in the dist directory. This directory can be renamed (icn3d) and moved around. When scripting icn3d it needs to be at the root level. 
 ```
-Web_Root (any dirname)
+web_root (any dirname)
   /icn3d (former dist)
   /pdb, collection files
   /other files
 ```
 ---
-### Runing localy
+### Running localy
+Within the web_root directory iCn3D can be launched in one of three ways:
+1. MacOS   - open icn3d/full.html
+2. python  - python3 -m http.server | python3 -m webbrowser 'http://localhost:8000/icn3d/?type=pdb&url=/path_to_file.pdb'
+3. node.js - http-server -a localhost -o '/icn3d/?type=pdb&url=/path_to_file.pdb'
 
+Caveats:
+>node.js does not require http as it is 'http://localhost:8080', a system default port.  
+>type=collection does not work at this time. 
 
 ## Node scripts
+iCn3D ships with example node.js scripts that can be used to automate analyses such as determining the amino acid intercations between a paratope and epitope. To use a set of node modues must be installed in the orginal icn3d directory
+```bash
+npm install jquery
+npm install jsdom
+npm install icn3d
+npm install axios
+npm install querystring
+npm install three
+```
+
 
 ## Python scripts
 
