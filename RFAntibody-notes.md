@@ -58,7 +58,7 @@ Summary of steps:
     poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5- 8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
     ```
 15. Test RFdiffusion
-    adjust - the first line ([see below](#example-command))
+    adjust - the first line ([see below](#4.-The-example-command))
 16. Test ProteinMPNN
     ```
     bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
