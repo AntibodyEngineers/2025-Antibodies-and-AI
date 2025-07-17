@@ -62,8 +62,8 @@ click D3 "https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/
 
 
 ### Installation
-1. Follow the steps listed at [RFAntibody GitHub page](https://github.com/RosettaCommons/RFantibody)
-2. Make additions/changes specified on [RFAntibody-notes](RFAntibody-notes.md#rfantibody-issues)
+1. Read [RFAntibody GitHub page](https://github.com/RosettaCommons/RFantibody), the steps and modications, closely follow this. 
+2. Walk through the steps, including modifications, in [RFAntibody-notes](RFAntibody-notes.md#rfantibody-installation)
 3. See [Docker](RFAntibody-notes.md#docker) for example commands.
 
 
