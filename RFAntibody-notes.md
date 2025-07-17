@@ -45,14 +45,14 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
    docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
    ```
    With user specification
-  ```bash
-   docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it rfantibody_username
+   ```bash
+   docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it          rfantibody_username
    ```
 
 10. **Set up the Python environment**
-   ```bash
-   bash /home/include/setup.sh
-   ```
+    ```bash
+    bash /home/include/setup.sh
+    ```
 
 11. **Install Biotite**
 > [!IMPORTANT]
@@ -63,11 +63,9 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
 > [!TIP]
 > Optional: inside the container, install `less` (instead of `more`)
 > any other software must be installed in the container as well
-
-  ```bash
-  apt-get update && apt-get install -y less
-  ```
-
+   ```bash
+   apt-get update && apt-get install -y less
+   ```
   
 11. **Copy `rfdiffusion_inference.py` to the source directory**
 > [!IMPORTANT]
