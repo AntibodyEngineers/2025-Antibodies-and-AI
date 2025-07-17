@@ -25,7 +25,7 @@ open full.html
 ```
 The last two steps are to test for a successful build. The working local version of icn3d is in the dist directory. This directory can be renamed (icn3d) and moved around. When scripting icn3d it needs to be at the root level. 
 ```
-Web Root
+Web_Root (any dirname)
   /icn3d (former dist)
   /pdb, collection files
   /other files
