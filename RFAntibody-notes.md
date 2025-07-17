@@ -35,44 +35,51 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
    ```bash
    docker build -t rfantibody .
    ```
-
-7. **Start the Docker image**
+   With a multiuser system images and containers should specify the users image and container.
+    ```bash
+   docker build -t rfantibody_username .
+   ```
+8. **Start the Docker image**
    ```bash
    docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
    ```
+   With user specification
+  ```bash
+   docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it rfantibody_username
+   ```
 
-8. **Set up the Python environment**
+10. **Set up the Python environment**
    ```bash
    bash /home/include/setup.sh
    ```
 
-9. **Install Biotite**
+11. **Install Biotite**
    ```bash
    poetry run pip install biotite
    ```
 
-10. **Copy `rfdiffusion_inference.py` to the source directory**
+11. **Copy `rfdiffusion_inference.py` to the source directory**
     ```bash
     cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
     ```
 
-11. **Test `chothia2HLT.py`**
+12. **Test `chothia2HLT.py`**
     ```bash
     poetry run python /home/scripts/util/chothia2HLT.py \
       scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
       --heavy H --light L --target T --output myHLT.pdb
     ```
 
-12. **Test RFdiffusion adjust – the first line (see item 4 below)**
+13. **Test RFdiffusion adjust – the first line (see item 4 below)**
 
-13. **Test ProteinMPNN**
+14. **Test ProteinMPNN**
     ```bash
     bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
     ```
 
-14. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see item 5 below)**
+15. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see item 5 below)**
 
-15. **Test RF2**
+16. **Test RF2**
     ```bash
     bash /home/scripts/examples/rf2/ab_pdb_example.sh
     ```
@@ -148,6 +155,7 @@ The installation mostly worked but required:
 ---
 
 ## Docker
+The commands below assume RFAntibody and rfantibody are the folder and image names, respectively. 
 
 Worked through the examples; to **preserve** the work:
 
@@ -167,6 +175,15 @@ docker start rfantibody
 docker exec -it rfantibody /bin/bash
 docker ps
 docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
+```
+
+**Cleaning up images and containers**
+
+Docker ps and docker image list running containers and images, respectively.  
+To remove a container
+```bash
+docker rm name|container_id
+docker image rm name|image_id
 ```
 
 ---
