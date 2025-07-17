@@ -1,22 +1,22 @@
 # iCn3D
-[iCn3d](https://www.ncbi.nlm.nih.gov/Structure/icn3d/), developed and supported by [NCBI](https://www.ncbi.nlm.nih.gov/)(The National Center for Biotechnology Information) is a web-based system that is used to visualize structures and their sequence data. iCn3D has many advanced features, such as getting interaction data for structures, that can be used to evaluate the the designs created by RFAntibody. It can be run as a web application from the NCBI server using data imported from a [collection](#collections) or on desktop computers with code obtained from the [iCn3D GitHub repository](https://github.com/ncbi/icn3d).
+[iCn3D](https://www.ncbi.nlm.nih.gov/Structure/icn3d/), developed and supported by [NCBI](https://www.ncbi.nlm.nih.gov/) (The National Center for Biotechnology Information), is a web-based system that is used to visualize structures and their sequence data. iCn3D has many advanced features, such as getting interaction data for structures, that can be used to evaluate the designs created by RFAntibody. It can be run as a web application from the NCBI server using data imported from a [collection](#collections) or on desktop computers with code obtained from the [iCn3D GitHub repository](https://github.com/ncbi/icn3d).
 
 ## Web version
-The web version is the "standard" way to run iCn3D. It hass all the features and can import files from NCBI servers as well as upload local files including collection files. Local iCn3D is needed for scripting application and processing data via node.js or python scripts as described below. 
+The web version is the "standard" way to run iCn3D. It has all the features and can import files from NCBI servers as well as upload local files including collection files. Local iCn3D is needed for scripting applications and processing data via Node.js or Python scripts as described below. 
 
 ## Collections
-Collections (developed by Digital World Biology) are a way to import and interact with annotated sets of molecular structures in iCn3D. iCn3D support three kinds of collections:
-1. A list of PDB IDs in a json file
-2. A zip compressed directory of gz compressed pdb file
-3. A zip compressed directory of pdb files listed in a json file
+Collections (developed by Digital World Biology) are a way to import and interact with annotated sets of molecular structures in iCn3D. iCn3D supports three kinds of collections:
+1. A list of PDB IDs in a JSON file
+2. A zip-compressed directory of gz-compressed PDB files
+3. A zip-compressed directory of PDB files listed in a JSON file
    
-Additionally, a single pdb, or pdb.gz file can be uploaded and added to a collection.
+Additionally, a single PDB or PDB.GZ file can be uploaded and added to a collection.
 
-Collection json files specify a "collectionTitle", "collectionDescription", and a list of "structures". Each structure includes:
-- an id: header-name, or datbase id
-- a titile: text
-- a description: text
-- commands: comma separated list of iCn3D commands
+Collection JSON files specify a `"collectionTitle"`, `"collectionDescription"`, and a list of `"structures"`. Each structure includes:
+- an `id`: header name or database ID
+- a `title`: text
+- a `description`: text
+- `commands`: comma-separated list of iCn3D commands
 
 > [!NOTE]
 > **pdb files in a collection must have a HEADER line with a basename that matches the unambiguous portion of the filename**  
@@ -49,19 +49,19 @@ For example,this file:
   ]
 }
 ```
-Will load the structures with the respective HEADER lines: HEADER nb_gfp_des_1_dldesign_0_best, and HEADER nb_gfp_des_2_dldesign_0_best. The ids will be listed in the Collection Viewer window. When an id is clicked, the interactions between the H and T chains are slected and displayed (first command), along with an intercation graphic (second command). 
+Will load the structures with the respective HEADER lines: HEADER nb_gfp_des_1_dldesign_0_best, and HEADER nb_gfp_des_2_dldesign_0_best. The IDs will be listed in the Collection Viewer window. When an ID is clicked, the interactions between the H and T chains are slected and displayed (first command), along with an intercation graphic (second command) per the image below. 
 
 ![collection showing a selected structure and its interchain interactions](/images/icn3d-collection.png?raw=true)
 
 > [!TIP]
-> Fighting with tabs & spaces from a code editor? Paste into https://jsonformatter.org/ to reformat
+> Fighting with tabs & spaces from a code editor? Paste into https://jsonformatter.org/ to reformat. The above json was a pain.
 
 ## Localized version
-iCn3D can also be run on local computers. The code can be optained by running:
+iCn3D can also be run on local computers. The code can be obtained by running:
 ```bash
 git clone https://github.com/ncbi/icn3d.git
 ```
-Then
+Followed by:
 ```
 cd icn3d
 ```
@@ -76,12 +76,22 @@ gulp
 cd dist
 open full.html
 ```
-The last two steps are to test for a successful build. The working local version of icn3d is in the dist directory. This directory can be renamed (icn3d) and moved around. When scripting icn3d it needs to be at the root level. 
+The last two steps test for a successful build; icn3d should launch in a browser window. 
+
+> [!NOTE]
+> "open" is Mac OSX command.
+
+The working local version of icn3d is in the "dist" directory. This directory can be renamed (icn3d) and moved around. When scripting icn3d it needs to be at the root level of the directory it is in. 
+
+An example directory may look like this.
 ```
 web_root (any dirname)
-  /icn3d (former dist)
-  /pdb, collection files
-  /other files
+   /icn3d (former dist)
+   /pdb, collection files
+   /other files
+   /node_modules
+   /package.json
+   /package-lock.json
 ```
 ---
 ### Running localy
@@ -104,21 +114,25 @@ npm install axios
 npm install querystring
 npm install three
 ```
-Note this follows the [icn3dnode documentation](https://github.com/ncbi/icn3d/blob/master/icn3dnode/README.md) with the addition of installing three. When first run, scripts complained that it was not installed. 
+> [!NOTE]
+> This follows the [icn3dnode documentation](https://github.com/ncbi/icn3d/blob/master/icn3dnode/README.md) with the addition of installing the js library three. When first run, scripts complained that "three" was not installed. 
 
 To run a script, in the icn3d directory:
 ```
 node icn3dnode/interactiondetail2.js path_to_file.pdb H T
 ```
-For example 
+For example: 
 ```
 node icn3dnode/interactiondetail2.js ../RFantibody/gfp_rf2/nb_gfp_des_0_dldesign_0_best.pdb H T
 ```
-Prints the interactions in json format
+Prints the interactions in json format  
+
 Example scripts and their descriptions can be found in the [icn3dnode/README.md](https://github.com/ncbi/icn3d/blob/master/icn3dnode/README.md). 
 
 ## Python scripts
-iCn3D can also be scripted in python. This is work in progress. A draft script was developed and mostly works, but the interactions are intramolecular for the first chain listed. To get started, selenium and webdriver are needed. Chrome was a pain, so, used Firefox with the geckodriver (on MacOS):
+iCn3D can also be scripted in python. This is work in progress. A draft script was developed and mostly works, but the interactions are intramolecular for the first chain listed. 
+
+To get started, selenium and webdriver are needed. Chrome was a pain, so, used Firefox with the geckodriver (on MacOS):
 ```
 pip install selenium
 pip install selenium webdriver-manager
