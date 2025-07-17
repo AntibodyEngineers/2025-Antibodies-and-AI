@@ -201,9 +201,9 @@ RFAntibody **requires** a GPU.
 python3 -m pip install torch
 python3
 >>> import torch
->>> print(
-...     torch.cuda.is_available(),
-...     torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU"
+>>> print(\
+...     torch.cuda.is_available(),\
+...     torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU"\
 ... )
 ```
 
