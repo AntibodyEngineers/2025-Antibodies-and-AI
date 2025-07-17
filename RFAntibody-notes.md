@@ -39,6 +39,7 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
     ```bash
    docker build -t rfantibody_username .
    ```
+    
 8. **Start the Docker image**
    ```bash
    docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
@@ -60,11 +61,12 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
    poetry run pip install biotite
    ```
 > [!TIP]
-> Optional: inside the container, install `less` (instead of `more`):
+> Optional: inside the container, install `less` (instead of `more`)
+> any other software must be installed in the container as well
+
   ```bash
   apt-get update && apt-get install -y less
   ```
-> any other software must be installed in the container as well
 
   
 11. **Copy `rfdiffusion_inference.py` to the source directory**
