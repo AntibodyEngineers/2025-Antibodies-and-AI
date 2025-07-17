@@ -63,12 +63,13 @@ Summary of steps:
     ```
     bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
     ```
-17. Fix /home/src/rfantibody/rf2/config/base.yaml
+17. Fix /home/src/rfantibody/rf2/config/base.yaml (see item 5 below)
 18. Test RF2
     ```
     bash /home/scripts/examples/rf2/ab_pdb_example.sh
     ```
     <hr>
+    
 ### Details / Notes   
 The installation mostly works needed to:
 1. Install biotite
