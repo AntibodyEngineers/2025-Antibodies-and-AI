@@ -13,7 +13,35 @@ Additionally, a single pdb, or pdb.gz file can be uploaded and added to a collec
 Collection json files specify a "collectionTitle", "collectionDescription", and a list of "structures". Each structure includes:
 - an id: header-name.pdb, or datbase id
 - a titile: text
-- a 
+- a description: text
+- commands: comma separated list of iCn3D commands
+For example,this file:
+```
+{
+	"collectionTitle": "RF designs",
+	"collectionDescription": "Designs from RFAntibody",
+	"structures": [
+	  {
+		"id": "nb_gfp_des_1_dldesign_0_best",
+		"title": "Des 1",
+		"description": "<p>first in list</p>",
+    "commands": ["display interaction 3d | stru_H stru_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5",
+                "line graph interaction pairs | stru_H stru_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5"
+                ]
+	  },
+    {
+		"id": "nb_gfp_des_2_dldesign_0_best",
+		"title": "Des 2",
+		"description": "<p>first in list</p>",
+    "commands": ["display interaction 3d | stru2_H stru2_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5",
+                "line graph interaction pairs | stru2_H stru2_T | hbonds,salt bridge,interactions,halogen,pi-cation,pi-stacking | false | threshold 3.8 6 4 3.8 6 5.5"
+                ]
+	  }
+	]
+}
+```
+Will load the structures with the respective HEADER lines: HEADER nb_gfp_des_1_dldesign_0_best, and HEADER nb_gfp_des_2_dldesign_0_best. List Des 1 and Des 2 in the Collection Viewer window and then select display the intercations between the H and T chains in each structure when clicked along with an intercation graphic.   
+
 
 ## Localized version
 iCn3D can also be run on local computers. The code can be optained by running:
