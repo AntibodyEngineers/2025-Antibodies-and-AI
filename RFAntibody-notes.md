@@ -24,7 +24,7 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
    sudo usermod -aG docker $USER
    ```
 
-4. **Exit terminal & relogin**
+4. **Exit terminal & re-login**
 
 5. **Change directory to RFAntibody**
    ```bash
@@ -54,32 +54,46 @@ RFAntibody runs in a Docker image and **requires a GPU**. GPU testing, installat
    ```
 
 11. **Install Biotite**
+> [!IMPORTANT]
+> Not included in the RFAntibody instructions   
    ```bash
    poetry run pip install biotite
    ```
-
+> [!TIP]
+> Optional: inside the container, install `less` (instead of `more`):
+  ```bash
+  apt-get update && apt-get install -y less
+  ```
+> another software must be installed in the container as well
+  
 11. **Copy `rfdiffusion_inference.py` to the source directory**
+> [!IMPORTANT]
+> Found in the RFAntibody issues
     ```bash
     cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
     ```
 
-12. **Test `chothia2HLT.py`**
+13. **Test `chothia2HLT.py`**
+> [!IMPORTANT]
+> RFAntibody instructions were incorrect
     ```bash
     poetry run python /home/scripts/util/chothia2HLT.py \
       scripts/examples/example_inputs/hu-4D5-8_Fv.pdb \
       --heavy H --light L --target T --output myHLT.pdb
     ```
 
-13. **Test RFdiffusion adjust – the first line (see item 4 below)**
+15. **Test RFdiffusion adjust – the first line (see item 4 below)**
 
-14. **Test ProteinMPNN**
+16. **Test ProteinMPNN**
     ```bash
     bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
     ```
 
-15. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see item 5 below)**
+17. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see script fixes)**
+> [!IMPORTANT]
+> RFAntibody base.yaml specifies a **non‑existent** weights file.
 
-16. **Test RF2**
+18. **Test RF2**
     ```bash
     bash /home/scripts/examples/rf2/ab_pdb_example.sh
     ```
@@ -130,7 +144,7 @@ The installation mostly worked but required:
   poetry run python /home/src/rfantibody/rfdiffusion/rfdiffusion_inference.py
   ```
 
-- Script fix:
+- Script fixes:
   ```bash
   bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
   ```
@@ -145,11 +159,6 @@ The installation mostly worked but required:
   with
   ```
   /home/weights/RF2_ab.pt
-  ```
-
-- Optional: inside the container, install `less` (instead of `more`):
-  ```bash
-  apt-get update && apt-get install -y less
   ```
 
 ---
