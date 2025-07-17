@@ -15,7 +15,7 @@ Summary of steps:
    ```
    sudo usermod -aG docker $USER
    ```
-7. Exit terminal, relogin,
+7. Exit terminal & relogin
 8. cd to RFAntibody
 9. Build docker image
    ```
