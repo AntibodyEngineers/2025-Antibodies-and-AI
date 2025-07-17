@@ -66,6 +66,14 @@ Prints the interactions in json format
 Example scripts and their descriptions can be found in the [icn3dnode/README.md](https://github.com/ncbi/icn3d/blob/master/icn3dnode/README.md). 
 
 ## Python scripts
+iCn3D can also be scripted in python. This is work in progress. A draft script was developed and mostly works, but the interactions are intramolecular for the first chain listed. To get started, selenium and webdriver are needed. Chrome was a pain, so, used Firefox with the geckodriver (on MacOS):
+```
+pip install selenium
+pip install selenium webdriver-manager
+brew install geckodriver
+```
+Brew install can be skipped if geckodriver is already in PATH — webdriver-manager can handle it too (ChatGPT).
+The example, [RFAb_Interaction.py](/TMS-scripts/RFAb_Interaction.py) script can be found in the [TMS-scripts](/TMS-scripts) folder. 
 
 ## Collections
 
