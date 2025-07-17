@@ -7,10 +7,10 @@
    
 ### Outcomes
 1. Learn about antibody/antigen recognition (paratopes & epitopes)
-2. Working with docker images and commands
-3. Preparing data for RFAntibody
-4. Analyzing protein structure designs
-5. Learning about RFAntibody parameters specifically and AI issue in general
+2. Gain experience working with docker images and commands
+3. Work with pdb files to prepare data for RFAntibody
+4. Confirm desings by analyzing generated protein sequences and structures
+5. Develop an understanding of RFAntibody parameters specifically and AI issue in general
 
 ## Team Members
 ## Compute Resources
