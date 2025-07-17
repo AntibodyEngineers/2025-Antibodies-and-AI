@@ -1,5 +1,5 @@
 # iCn3D
-NCBI tool: Used to visualize structures, get interaction data for structures.
+[iCn3d](https://www.ncbi.nlm.nih.gov/Structure/icn3d/), developed and supported by [NCBI](https://www.ncbi.nlm.nih.gov/)(The National Center for Biotechnology Information) is a web-based system that is used to visualize structures and their sequence data. iCn3D has many advanced features, such as getting interaction data for structures, that can be used to evaluate the the designs created by RFAntibody. It can be run as a web application from the NCBI server using data imported from a [collection](#collections) or on desktop computers with code obtained from the [iCn3D GitHub repository](https://github.com/ncbi/icn3d).
 
 ## Web version
 
