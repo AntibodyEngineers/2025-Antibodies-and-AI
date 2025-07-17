@@ -52,7 +52,18 @@ npm install axios
 npm install querystring
 npm install three
 ```
+Note this follows the [icn3dnode documentation](https://github.com/ncbi/icn3d/blob/master/icn3dnode/README.md) with the addition of installing three. When first run, scripts complained that it was not installed. 
 
+To run a script, in the icn3d directory:
+```
+node icn3dnode/interactiondetail2.js path_to_file.pdb H T
+```
+For example 
+```
+node icn3dnode/interactiondetail2.js ../RFantibody/gfp_rf2/nb_gfp_des_0_dldesign_0_best.pdb H T
+```
+Prints the interactions in json format
+Example scripts and their descriptions can be found in the [icn3dnode/README.md](https://github.com/ncbi/icn3d/blob/master/icn3dnode/README.md). 
 
 ## Python scripts
 
