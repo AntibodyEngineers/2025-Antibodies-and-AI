@@ -206,7 +206,12 @@ torch.cuda.is_available(),\
 torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU"\
 )
 ```
+Alternatively, with torch (and numpy) installed
+```bash
+python3 -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
+```
 
+Results from antibodies-gpu and test-gpu
 | Host            | torch.cuda.is_available | Device Name               |
 |-----------------|------------------------|---------------------------|
 | antibodies-gpu  | False                  | —                         |
