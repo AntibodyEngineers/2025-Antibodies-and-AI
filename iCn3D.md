@@ -4,7 +4,33 @@
 ## Web version
 
 ## Localized version
+iCn3D can also be run on local computers. The code can be optained by running:
+```bash
+git clone https://github.com/ncbi/icn3d.git
+cd icn3d
+```
+
 ### Installing
+The current instructions in the iCn3D GitHub page are out of date (npm config set -g production false is deprecated, and delete package-lock.json is assumed to be rm packag-lock.json) The following build commands work:
+```bash
+rm package-lock.json
+npm install
+npm install -g gulp
+npm install uglify-js@3.3.9
+gulp
+cd dist
+open full.html
+```
+The last two steps are to test for a successful build. The working local version of icn3d is in the dist directory. This directory can be renamed (icn3d) and moved around. When scripting icn3d it needs to be at the root level. 
+```
+Web Root
+  /icn3d (former dist)
+  /pdb, collection files
+  /other files
+```
+---
+### Runing localy
+
 
 ## Node scripts
 
