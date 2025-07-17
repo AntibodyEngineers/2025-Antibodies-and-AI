@@ -19,7 +19,7 @@ Collection json files specify a "collectionTitle", "collectionDescription", and 
 - commands: comma separated list of iCn3D commands
   
 For example,this file:
-```
+```json
 {
 	"collectionTitle": "RF designs",
 	"collectionDescription": "Designs from RFAntibody",
