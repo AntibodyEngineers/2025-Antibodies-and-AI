@@ -12,15 +12,15 @@ Collections (developed by Digital World Biology) are a way to import and interac
    
 Additionally, a single PDB or PDB.GZ file can be uploaded and added to a collection.
 
+> [!NOTE]
+> **pdb files in a collection must have a HEADER line with a basename that matches the unambiguous portion of the filename**  
+> HEADER header-name 
+
 Collection JSON files specify a `"collectionTitle"`, `"collectionDescription"`, and a list of `"structures"`. Each structure includes:
 - an `id`: header name or database ID
 - a `title`: text
 - a `description`: text
 - `commands`: comma-separated list of iCn3D commands
-
-> [!NOTE]
-> **pdb files in a collection must have a HEADER line with a basename that matches the unambiguous portion of the filename**  
-> HEADER header-name 
   
 For example,this file:
 ```json
@@ -65,8 +65,8 @@ Followed by:
 ```
 cd icn3d
 ```
-### Installing
-The current instructions in the iCn3D GitHub page are out of date (npm config set -g production false is deprecated, and delete package-lock.json is assumed to be rm packag-lock.json) The following build commands work:
+### Installing / Compiling 
+The current instructions in the iCn3D GitHub page are out of date (npm config set -g production false is deprecated, and delete package-lock.json is assumed to be rm package-lock.json) The following build commands work:
 ```bash
 rm package-lock.json
 npm install
@@ -80,8 +80,10 @@ The last two steps test for a successful build; icn3d should launch in a browser
 
 > [!NOTE]
 > "open" is Mac OSX command.
+> If rm package-json is done after npm install uglify-js@3.3.9, as indicated in the iCn3D instructions, gulp will not work, and npm install needs to be rerun. As a first step everyting works OK. 
 
-The working local version of icn3d is in the "dist" directory. This directory can be renamed (icn3d) and moved around. When scripting icn3d it needs to be at the root level of the directory it is in. 
+> [!NOTE]
+> The working local version of icn3d is in the "dist" directory. This directory can be renamed (icn3d) and moved around. When scripting, the icn3d directory needs to be at the root level of the directory it is in. 
 
 An example directory may look like this.
 ```
@@ -96,13 +98,14 @@ web_root (any dirname)
 ---
 ### Running localy
 Within the web_root directory iCn3D can be launched in one of three ways:
-1. MacOS   - open icn3d/full.html
+1. MacOS   - open icn3d/full.html | open icn3d/index.html
 2. python  - python3 -m http.server | python3 -m webbrowser 'http://localhost:8000/icn3d/?type=pdb&url=/path_to_file.pdb'
 3. node.js - http-server -a localhost -o '/icn3d/?type=pdb&url=/path_to_file.pdb'
 
-Caveats:
->node.js does not require http as it is 'http://localhost:8080', a system default port.  
->type=collection does not work at this time. 
+> [!TIP]
+> node.js does not require http as it is 'http://localhost:8080', a system default port.  
+> type=collection does not work at this time.
+> the above commands assume an index.html file is present, other html files can be specified. In those cases the url should include the file, e.g. '/icn3d/full.html?...'
 
 ## Node scripts
 iCn3D ships with example node.js scripts that can be used to automate analyses such as determining the amino acid intercations between a paratope and epitope. To use a set of node modues must be installed in the orginal icn3d directory
