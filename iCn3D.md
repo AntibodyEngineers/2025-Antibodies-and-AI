@@ -103,9 +103,9 @@ Within the web_root directory iCn3D can be launched in one of three ways:
 3. node.js - http-server -a localhost -o '/icn3d/?type=pdb&url=/path_to_file.pdb'
 
 > [!TIP]
-> node.js does not require http as it is 'http://localhost:8080', a system default port.  
-> type=collection does not work at this time.
-> the above commands assume an index.html file is present, other html files can be specified. In those cases the url should include the file, e.g. '/icn3d/full.html?...'
+> 1. node.js does not require http as it is 'http://localhost:8080', a system default port.  
+> 2. type=collection does not work at this time.
+> 3. the above commands assume an index.html file is present, other html files can be specified. In those cases the url should include the file, e.g. '/icn3d/full.html?...'
 
 ## Node scripts
 iCn3D ships with example node.js scripts that can be used to automate analyses such as determining the amino acid intercations between a paratope and epitope. To use a set of node modues must be installed in the orginal icn3d directory
