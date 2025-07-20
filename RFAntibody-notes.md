@@ -46,7 +46,7 @@ General command
 ```bash
 docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
 ```
-With user specification (the container can be anyname, the image name is from step 6. 
+With user specification (the container can be any name, the image name is from step 6. 
 ```bash
 docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it rfantibody_username
 ```
