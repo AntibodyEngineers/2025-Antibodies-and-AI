@@ -1,9 +1,9 @@
 # PyMol
 July, 2025
 
-The [PyMol](https://pymol.org) viewer is popular in many structural biology groups. An advantage of PyMol is that it is scriptable and the user interface provides a rich command line experience. PyMol offers several hundred commands, with programming syntax, to create detailed molecular displays and images. Its primary disadvantages are poor sequence display and manipulation capabilities, lack of integration with public databases, and limitations adding meta data, like FPOP values to structures.  
+The [PyMol](https://pymol.org) viewer is popular in many structural biology groups. An advantage of PyMol is that it is scriptable and the user interface provides a rich command line experience. PyMol offers several hundred commands, with programming syntax, to create detailed molecular displays and images. Its primary disadvantages are poor sequence display and manipulation capabilities, lack of integration with public databases, and limitations adding meta data about structures and obtaining detailed intercation data. 
 
-PyMol runs as local program on personal computers and is available in licensed and open-source versions.
+PyMol runs as local program on personal computers and is available in licensed and open-source (OS) versions.
 
 ## Installing OS PyMol
 Mac OS, used homebrew. Followd the instructions @ (https://formulae.brew.sh/formula/pymol), updated via brew upgrate pymol. 
