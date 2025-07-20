@@ -1,4 +1,5 @@
 # RFAntibody Notes
+July, 2025
 
 Part of the 2025 Hackathon AI work will **focus** on using the Rosetta Commons **RFAntibody**.  
 RFAntibody runs in a Docker image and **requires a GPU**. [GPU testing](#gpu) and [Docker commands](#docker) are described below.
