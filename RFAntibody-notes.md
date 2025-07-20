@@ -88,7 +88,7 @@ poetry run python /home/scripts/util/chothia2HLT.py \
   --heavy H --light L --target T --output myHLT.pdb
 ```
 
-12. **Test RFdiffusion adjust – the first line (see item 4 below)**
+12. **Test RFdiffusion adjust – the first line [(see Details / Notes)[(#details-/-notes)**
 
 13. **Test ProteinMPNN**
 ```bash
