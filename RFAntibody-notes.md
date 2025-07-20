@@ -6,6 +6,7 @@ RFAntibody runs in a Docker image and **requires a GPU**. [GPU testing](#gpu) an
 ---
 
 ## RFAntibody Installation
+This section merges the [RFAntibody istallation steps](https://github.com/RosettaCommons/RFantibody) with fixes needed to make the example tests included in the distro work.  
 
 ### Summary of steps
 
