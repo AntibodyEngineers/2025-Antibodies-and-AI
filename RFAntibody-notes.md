@@ -41,21 +41,22 @@ With a multiuser system images and containers should specify the users image and
 docker build -t rfantibody_username .
 ```
     
-8. **Start the Docker image**
+7. **Start the Docker image**
+General command
 ```bash
 docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
 ```
-With user specification
+With user specification (the container can be anyname, the image name is from step 6. 
 ```bash
-docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it          rfantibody_username
+docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it rfantibody_username
 ```
 
-10. **Set up the Python environment**
+8. **Set up the Python environment**
 ```bash
 bash /home/include/setup.sh
 ```
 
-11. **Install Biotite**
+9. **Install Biotite**
 > [!IMPORTANT]
 > Not included in the RFAntibody instructions
 ```bash
@@ -68,14 +69,14 @@ poetry run pip install biotite
 apt-get update && apt-get install -y less
 ```
   
-11. **Copy `rfdiffusion_inference.py` to the source directory**
+10. **Copy `rfdiffusion_inference.py` to the source directory**
 > [!IMPORTANT]
 > Found in the RFAntibody issues  
 ```bash
 cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
 ```
 
-13. **Test `chothia2HLT.py`**
+11. **Test `chothia2HLT.py`**
 > [!IMPORTANT]
 > RFAntibody instructions were incorrect  
 
@@ -85,18 +86,18 @@ poetry run python /home/scripts/util/chothia2HLT.py \
   --heavy H --light L --target T --output myHLT.pdb
 ```
 
-15. **Test RFdiffusion adjust – the first line (see item 4 below)**
+12. **Test RFdiffusion adjust – the first line (see item 4 below)**
 
-16. **Test ProteinMPNN**
+13. **Test ProteinMPNN**
 ```bash
 bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
 ```
 
-17. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see script fixes)**
+14. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see script fixes)**
 > [!IMPORTANT]
 > RFAntibody base.yaml specifies a **non‑existent** weights file.
 
-18. **Test RF2**
+15. **Test RF2**
 ```bash
 bash /home/scripts/examples/rf2/ab_pdb_example.sh
 ```
