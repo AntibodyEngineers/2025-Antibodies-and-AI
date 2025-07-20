@@ -88,7 +88,7 @@ poetry run python /home/scripts/util/chothia2HLT.py \
   --heavy H --light L --target T --output myHLT.pdb
 ```
 
-12. **Test RFdiffusion adjust – the first line [(see Details / Notes)](#details-/-notes)**
+12. **Test RFdiffusion adjust – the first line [(see Details / Notes)](#details-&-notes)**
 
 13. **Test ProteinMPNN**
 ```bash
@@ -104,7 +104,7 @@ bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
 bash /home/scripts/examples/rf2/ab_pdb_example.sh
 ```
 ---
-## Details / Notes
+## Details & Notes
 
 The installation mostly worked but required:
 
