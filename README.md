@@ -6,6 +6,8 @@ July, 2025
 1. Select antibodies for modeling
 2. Install and run RFAntibody
 3. Evaluate designs
+
+See the [to do list](RFAntibody-ToDo.md) for items that will need to be done.  
    
 ### Outcomes
 1. Learn about antibody/antigen recognition (paratopes & epitopes)
