@@ -38,7 +38,7 @@ cd RFAntibody
 docker build -t rfantibody .
 ```
 > [!TIP]
-> With a multiuser system images and containers should specify the users image and container.
+> With a multiuser system, images and containers should specify the users image and container. For example:
 
 ```bash
 docker build -t rfantibody_username .
