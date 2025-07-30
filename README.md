@@ -4,17 +4,17 @@ July, 2025
 ## Overview
 ### Goals
 1. Select antibodies for modeling
-2. Install and run RFAntibody
+2. Install and run RFAntibody and possible alternatives. 
 3. Evaluate designs
 
-See the [to do list](RFAntibody-ToDo.md) for items that will need to be done.  
+See the [to do list](RFAntibody-ToDo.md) for specific items needed for evaluation.  
    
 ### Outcomes
 1. Learn about antibody/antigen recognition (paratopes & epitopes)
 2. Gain experience working with docker images and commands
 3. Work with pdb files to prepare data for RFAntibody
 4. Evaluate designs by analyzing generated protein sequences and structures
-5. Develop an understanding of RFAntibody parameters specifically, and AI issues in general
+5. Develop an understanding of RFAntibody parameters specifically, data science used in evaluation, and AI issues in general
 
 ## Team Members
 ## Compute Resources
