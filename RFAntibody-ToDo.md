@@ -1,5 +1,25 @@
-# To Do Items
+# RFAntibody To Do Ideas
 July, 2025
+
+```mermaid
+mindmap
+ Root(RFAntibody)
+  PDB files -> Seeds
+   Single structure
+   Multi structure
+   Previous Work Examples
+    Inteaction interfaces
+    Literature analyses
+  Stuctures
+   Get Seed
+    Designs
+     Different seeds
+     Different hotspots
+     Different parameters
+    Evaluation
+     Visual inspection
+     Interaction interfaces
+```
 
 ## Get antibodies bound to GFP
 https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/search/?ABtype=All&method=All&species=All&resolution=&rfactor=&antigen=All&ltype=All&constantregion=All&affinity=All&isin_covabdab=All&isin_therasabdab=All&chothiapos=&restype=ALA&field_0=Antigens&keyword_0=green+fluorescent+protein
