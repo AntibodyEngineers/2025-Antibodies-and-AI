@@ -8,7 +8,7 @@ July, 2025
 3. Install and run RFAntibody and possible alternatives
 4. Evaluate designs
 
-See the [to do list](RFAntibody-ToDo.md) for specific items needed for evaluation.  
+See the [to do list](RFAntibody-ToDo.md) for specific itemes needed to complete the project.  
    
 ### Outcomes
 1. Learn about antibody/antigen recognition (paratopes & epitopes)
