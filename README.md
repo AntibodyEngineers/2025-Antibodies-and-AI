@@ -84,10 +84,13 @@ click D3 "https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/
 3. See [Docker](RFAntibody-notes.md#docker) for example docker commands.
 
 ## Citations
-Work was funded by National Science Foundation:
-- Digital World Biology -- "_Developing Classroom-based Undergraduate Research Experiences in Antibody Bioengineering_," [DUE 2055036](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055036&HistoricalAwards=false)  
-
-- InnovATEBIO -- "_InnovATEBIO National Biotechnology Education Center_," [DUE 1901984](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901984&HistoricalAwards=false)  
+### National Science Foundation Grants:
+- **Digital World Biology** -- "_Developing Classroom-based Undergraduate Research Experiences in Antibody Bioengineering_," [DUE 2055036](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055036&HistoricalAwards=false)  
+- **InnovATEBIO** -- "_InnovATEBIO National Biotechnology Education Center_," [DUE 1901984](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901984&HistoricalAwards=false)
+- **JetStream2** (compute resources):
+  - David Y. Hancock, Jeremy Fischer, John Michael Lowe, Winona Snapp-Childs, Marlon Pierce, Suresh Marru, J. Eric Coulter, Matthew Vaughn, Brian Beck, Nirav Merchant, Edwin Skidmore, and Gwen Jacobs. 2021. “_Jetstream2: Accelerating cloud computing via Jetstream_.” In Practice and Experience in Advanced Research Computing (PEARC ’21). Association for Computing Machinery, New York, NY, USA, Article 11, 1–8. DOI: https://dl.acm.org/doi/10.1145/3437359.3465565
+  - Timothy J. Boerner, Stephen Deems, Thomas R. Furlani, Shelley L. Knuth, and John Towns. 2023. _ACCESS: Advancing Innovation: NSF’s Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support_. “In Practice and Experience in Advanced Research Computing (PEARC ’23)”, July 23–27, 2023, Portland, OR, USA. ACM, New York, NY, USA, 4 pages. https://dl.acm.org/doi/10.1145/3569951.3597559
+### Literature
 
 
 
