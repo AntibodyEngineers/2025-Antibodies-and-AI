@@ -84,7 +84,7 @@ click D3 "https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/
 3. See [Docker](RFAntibody-notes.md#docker) for example docker commands.
 
 ## Citations
-### National Science Foundation Grants:
+### National Science Foundation Grants
 - **Digital World Biology** -- "_Developing Classroom-based Undergraduate Research Experiences in Antibody Bioengineering_," [DUE 2055036](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055036&HistoricalAwards=false)  
 - **InnovATEBIO** -- "_InnovATEBIO National Biotechnology Education Center_," [DUE 1901984](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901984&HistoricalAwards=false)
 - **JetStream2** (compute resources):
