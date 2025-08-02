@@ -1,5 +1,5 @@
 # 2025-Antibodies-and-AI
-July, 2025
+August, 2025
 
 ## Overview
 ### Goals
