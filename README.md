@@ -83,6 +83,11 @@ click D3 "https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/
 2. Walk through the steps, including modifications, in [RFAntibody-notes](RFAntibody-notes.md#rfantibody-installation)
 3. See [Docker](RFAntibody-notes.md#docker) for example docker commands.
 
+## Citations
+Work was funded by National Science Foundation:
+- Digital World Biology [DUE 2055036](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055036&HistoricalAwards=false)
+- InnovATEBIO [DUE 1901984](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901984&HistoricalAwards=false)
+
 
 
 
