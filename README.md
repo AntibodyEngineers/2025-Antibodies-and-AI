@@ -7,6 +7,7 @@ August, 2025
 2. Select antibodies for modeling
 3. Install and run RFAntibody and possible alternatives
 4. Evaluate designs
+5. Compare to current knowledge
 
 See the [to do list](RFAntibody-ToDo.md) for specific itemes needed to complete the project.  
    
