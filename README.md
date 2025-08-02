@@ -85,10 +85,10 @@ click D3 "https://github.com/AntibodyEngineers/2025-Antibodies-and-AI/blob/main/
 
 ## Citations
 Work was funded by National Science Foundation:
-- Digital World Biology [DUE 2055036](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055036&HistoricalAwards=false)
-Developing Classroom-based Undergraduate Research Experiences in Antibody Bioengineering
-- InnovATEBIO [DUE 1901984](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901984&HistoricalAwards=false)
-InnovATEBIO National Biotechnology Education Center
+- Digital World Biology -- "_Developing Classroom-based Undergraduate Research Experiences in Antibody Bioengineering_," [DUE 2055036](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055036&HistoricalAwards=false)  
+
+- InnovATEBIO -- "_InnovATEBIO National Biotechnology Education Center_," [DUE 1901984](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1901984&HistoricalAwards=false)  
+
 
 
 
