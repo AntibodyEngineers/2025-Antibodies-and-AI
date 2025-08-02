@@ -18,6 +18,17 @@ See the [to do list](RFAntibody-ToDo.md) for specific items needed for evaluatio
 5. Develop an understanding of RFAntibody parameters specifically, data science used in evaluation, and AI issues in general
 
 ## Team Members
+| Name | Role |
+|:-----|:-----|
+| TBD | Writer |
+| TBD | Coder |
+| TBD | Logo Designer, Coder |
+| TBD | Data Wrangler |
+| TBD | Coder |
+| TBD | Coder |
+| Todd Smith | Leader |
+| Eric Olson | Leader |
+
 ## Compute Resources
 ### General Architecture
 
