@@ -3,10 +3,10 @@ July, 2025
 
 ## Overview
 ### Goals
-1. Select antibodies for modeling
-2. Install and run RFAntibody and possible alternatives
-3. Evaluate designs
-4. Learn aobut AI and different ways to use it
+1. Learn aobut AI and different ways to use it
+2. Select antibodies for modeling
+3. Install and run RFAntibody and possible alternatives
+4. Evaluate designs
 
 See the [to do list](RFAntibody-ToDo.md) for specific items needed for evaluation.  
    
