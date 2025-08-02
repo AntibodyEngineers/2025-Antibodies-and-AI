@@ -1,4 +1,4 @@
-# 2025-Antibodies-and-AI
+# Antibodies and AI
 August, 2025
 
 ## Overview
