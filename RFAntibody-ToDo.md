@@ -18,15 +18,15 @@ flowchart TB
     %% Level 2
     Single(["Single structure"])
     Multi(["Multi structure"])
-    PrevWork(["Previous Work Examples"])
-    GetSeed(["Get Seed"])
+    PrevWork(["Previous Work"])
+    GetSeed(["Seed Structures (H/T)"])
     HotSpots(["Hot Spots"])
     EvalDesigns(["Evaluating Designs"])
     classDef subStyle fill:#E5E5E5,stroke:#999,stroke-dasharray: 5 5;
 
     %% Level 3
     Interfaces(["Interaction interfaces"])
-    Literature(["Literature analyses"])
+    Literature(["Literature interactions"])
 
     %% Level 4
     DiffSeeds(["Different seeds"])
@@ -45,6 +45,7 @@ flowchart TB
     RFAntibody --> PDBSeeds
     PDBSeeds --> Single
     PDBSeeds --> Multi
+    Multi -.-> Single
     PDBSeeds --> PrevWork
     PDBSeeds --> GetSeed
     PrevWork --> Interfaces
@@ -54,9 +55,14 @@ flowchart TB
     GenDesigns --> DiffSeeds
     GenDesigns --> DiffHotspots
     GenDesigns --> DiffParams
-    GenDesigns --> EvalDesigns
+    DiffSeeds --> EvalDesigns
+    DiffHotspots --> EvalDesigns
+    DiffParams --> EvalDesigns
     EvalDesigns --> VisInspect
     EvalDesigns --> IntInterfaces
+
+    %% Labeled Edge
+    Single --split--> GetSeed
 
     %% Side Connections
     EvalDesigns -.-> Compare
