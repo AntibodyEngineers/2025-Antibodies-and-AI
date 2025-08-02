@@ -1,5 +1,5 @@
 # RFAntibody To Do Ideas
-July, 2025
+August, 2025
 
 ## Overview
 RFAntibody requires a seed structure to make designs. One made, which designs are the best? How do seeds, and other parameters affect designs? 
