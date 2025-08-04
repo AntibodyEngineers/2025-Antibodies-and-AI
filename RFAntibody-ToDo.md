@@ -36,6 +36,7 @@ flowchart TB
     %% Level 5
     VisInspect(["Visual inspection"])
     IntInterfaces(["Interaction interfaces"])
+    Affinity(["Binding Affinity"])
 
     %% Side Node
     Compare(["Compare"])
@@ -60,6 +61,7 @@ flowchart TB
     DiffParams --> EvalDesigns
     EvalDesigns --> VisInspect
     EvalDesigns --> IntInterfaces
+    EvalDesigns --> Affinity
 
     %% Labeled Edge
     Single --split--> GetSeed
