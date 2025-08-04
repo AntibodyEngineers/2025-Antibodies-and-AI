@@ -1,4 +1,6 @@
-# Previously Identified Amino Adid Interactions 
+# Previously Identified Amino Acid Interactions 
+Aug 2025
+Table was generated in Notebook LM using the 10 available papers for the 23 structures
 
 | PDB ID | Complex | Interacting Protein 1 (Residue Type & Number) | Interacting Protein 2 (Residue Type & Number) | Type of Interaction |
 |--------|---------|-----------------------------------------------|-----------------------------------------------|--------------------|
