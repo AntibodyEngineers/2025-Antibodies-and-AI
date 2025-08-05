@@ -1,6 +1,8 @@
 # Antibodies and AI
 August, 2025
 
+<img src="images/Project_AnAI_2.png" alt="logo showing an antibody and science icons" height="300">
+
 ## Overview
 ### Goals
 1. Learn aobut AI and different ways to use it
