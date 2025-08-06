@@ -1,4 +1,4 @@
-# RFAntibody Notes
+# RFantibody Notes
 July, 2025
 
 Part of the 2025 Hackathon AI work will **focus** on using the Rosetta Commons **RFantibody**.  
