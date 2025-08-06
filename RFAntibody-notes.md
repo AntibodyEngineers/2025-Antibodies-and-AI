@@ -1,13 +1,13 @@
 # RFAntibody Notes
 July, 2025
 
-Part of the 2025 Hackathon AI work will **focus** on using the Rosetta Commons **RFAntibody**.  
-RFAntibody runs in a Docker image and **requires a GPU**. [GPU testing](#gpu) and [Docker commands](#docker) are described below.
+Part of the 2025 Hackathon AI work will **focus** on using the Rosetta Commons **RFantibody**.  
+RFantibody runs in a Docker image and **requires a GPU**. [GPU testing](#gpu) and [Docker commands](#docker) are described below.
 
 ---
 
 ## RFAntibody Installation
-This section merges the [RFAntibody istallation steps](https://github.com/RosettaCommons/RFantibody) with fixes needed to make the example tests included in the distro work.  
+This section merges the [RFantibody istallation steps](https://github.com/RosettaCommons/RFantibody) with fixes needed to make the example tests included in the distro work.  
 
 ### Summary of steps
 
@@ -28,9 +28,9 @@ sudo usermod -aG docker $USER
 
 4. **Exit terminal & re-login**
 
-5. **Change directory to RFAntibody**
+5. **Change directory to RFantibody**
 ```bash
-cd RFAntibody
+cd RFantibody
 ```
 
 6. **Build Docker image**
@@ -51,7 +51,7 @@ docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
 ```
 With user specification (the container can be any name, the image name is from step 6. 
 ```bash
-docker run --name rfantibody_username --gpus all -v .:/home --memory 10g -it rfantibody_username
+docker run --gpus all -v .:/home --memory 10g -it rfantibody_username
 ```
 
 8. **Set up the Python environment**
@@ -61,7 +61,7 @@ bash /home/include/setup.sh
 
 9. **Install Biotite**
 > [!IMPORTANT]
-> Not included in the RFAntibody instructions
+> Not included in the RFantibody instructions
 ```bash
 poetry run pip install biotite
 ```
@@ -74,7 +74,7 @@ apt-get update && apt-get install -y less
   
 10. **Copy `rfdiffusion_inference.py` to the source directory**
 > [!IMPORTANT]
-> Found in the RFAntibody issues  
+> Found in the RFantibody issues  
 ```bash
 cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
 ```
