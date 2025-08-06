@@ -81,7 +81,7 @@ cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
 
 11. **Test `chothia2HLT.py`**
 > [!IMPORTANT]
-> RFAntibody instructions were incorrect  
+> RFantibody instructions were incorrect  
 
 ```bash
 poetry run python /home/scripts/util/chothia2HLT.py \
@@ -98,7 +98,7 @@ bash /home/scripts/examples/proteinmpnn/ab_pdb_example.sh
 
 14. **Fix `/home/src/rfantibody/rf2/config/base.yaml` (see script fixes)**
 > [!IMPORTANT]
-> RFAntibody base.yaml specifies a **non‑existent** weights file.
+> RFantibody base.yaml specifies a **non‑existent** weights file.
 
 15. **Test RF2**
 ```bash
@@ -169,7 +169,7 @@ The installation mostly worked but required:
 ---
 
 ## Docker
-The commands below assume RFAntibody and rfantibody are the folder and image names, respectively. 
+The commands below assume RFantibody and rfantibody are the folder and image names, respectively. 
 
 Worked through the examples; to **preserve** the work:
 
@@ -204,7 +204,7 @@ docker image rm name|image_id
 
 ## GPU
 
-RFAntibody **requires** a GPU.
+RFantibody **requires** a GPU.
 
 - Last year’s instance showed `nvidia-smi`, but was **not connecting** to Jetstream GPUs.  
 - Tested a fresh Ubuntu 22 instance (Ubuntu 24 produced many init errors).
