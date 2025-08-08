@@ -1,0 +1,485 @@
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER121
+	L ASP122 < Fragment 1 > L LYS232
+	T ASN237 < Fragment 2 > T THR267
+	T VAL269 < Fragment 3 > T LYS272
+	T LEU274 < Fragment 4 > T VAL297
+	T ILE299 < Fragment 5 > T SER316
+	T LEU318 < Fragment 6 > T LYS346
+	T SER348 < Fragment 7 > T GLY400
+
+##########################################
+[+] Parsed structure file tfrc_3_dldesign_0_best (3 chains, 400 residues)
+[+] No. of intermolecular contacts: 4
+[+] No. of charged-charged contacts: 0.0
+[+] No. of charged-polar contacts: 0.0
+[+] No. of charged-apolar contacts: 2.0
+[+] No. of polar-polar contacts: 1.0
+[+] No. of apolar-polar contacts: 1.0
+[+] No. of apolar-apolar contacts: 0.0
+[+] Percentage of apolar NIS residues: 37.84
+[+] Percentage of charged NIS residues: 25.00
+[++] Predicted binding affinity (kcal.mol-1):     -5.7
+[++] Predicted dissociation constant (M) at 25.0˚C:  7.1e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER114
+	L ASP115 < Fragment 1 > L LYS218
+	T ASN223 < Fragment 2 > T LYS258
+	T LEU260 < Fragment 3 > T SER302
+	T LEU304 < Fragment 4 > T LYS332
+	T SER334 < Fragment 5 > T GLY386
+
+##########################################
+[+] Parsed structure file tfrc_8_dldesign_0_best (3 chains, 386 residues)
+[+] No. of intermolecular contacts: 10
+[+] No. of charged-charged contacts: 1.0
+[+] No. of charged-polar contacts: 1.0
+[+] No. of charged-apolar contacts: 5.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 0.0
+[+] No. of apolar-apolar contacts: 3.0
+[+] Percentage of apolar NIS residues: 38.62
+[+] Percentage of charged NIS residues: 24.83
+[++] Predicted binding affinity (kcal.mol-1):     -5.9
+[++] Predicted dissociation constant (M) at 25.0˚C:  4.7e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER120
+	L ASP121 < Fragment 1 > L LYS226
+	T ASN231 < Fragment 2 > T ARG241
+	T LEU243 < Fragment 3 > T THR261
+	T VAL263 < Fragment 4 > T LYS266
+	T LEU268 < Fragment 5 > T VAL291
+	T ILE293 < Fragment 6 > T SER310
+	T LEU312 < Fragment 7 > T LYS340
+	T SER342 < Fragment 8 > T SER367
+	T ASP369 < Fragment 9 > T GLY394
+
+##########################################
+[+] Parsed structure file tfrc_12_dldesign_0_best (3 chains, 394 residues)
+[+] No. of intermolecular contacts: 15
+[+] No. of charged-charged contacts: 3.0
+[+] No. of charged-polar contacts: 1.0
+[+] No. of charged-apolar contacts: 3.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 4.0
+[+] No. of apolar-apolar contacts: 4.0
+[+] Percentage of apolar NIS residues: 39.32
+[+] Percentage of charged NIS residues: 23.73
+[++] Predicted binding affinity (kcal.mol-1):     -6.8
+[++] Predicted dissociation constant (M) at 25.0˚C:  1.0e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER121
+	L ASP122 < Fragment 1 > L LYS231
+	T ASN236 < Fragment 2 > T ARG246
+	T LEU248 < Fragment 3 > T THR266
+	T THR267 < Fragment 4 > T LYS271
+	T LEU273 < Fragment 5 > T SER315
+	T LEU317 < Fragment 6 > T LYS345
+	T SER347 < Fragment 7 > T SER373
+	T ASP374 < Fragment 8 > T GLY399
+
+##########################################
+[+] Parsed structure file tfrc_10_dldesign_0_best (3 chains, 399 residues)
+[+] No. of intermolecular contacts: 3
+[+] No. of charged-charged contacts: 0.0
+[+] No. of charged-polar contacts: 0.0
+[+] No. of charged-apolar contacts: 1.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 0.0
+[+] No. of apolar-apolar contacts: 2.0
+[+] Percentage of apolar NIS residues: 39.13
+[+] Percentage of charged NIS residues: 23.75
+[++] Predicted binding affinity (kcal.mol-1):     -5.5
+[++] Predicted dissociation constant (M) at 25.0˚C:  1.0e-04
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER117
+	L ASP118 < Fragment 1 > L LYS226
+	T ASN231 < Fragment 2 > T ARG241
+	T LEU243 < Fragment 3 > T THR261
+	T VAL263 < Fragment 4 > T LYS266
+	T LEU268 < Fragment 5 > T VAL291
+	T ILE293 < Fragment 6 > T SER310
+	T LEU312 < Fragment 7 > T LYS340
+	T SER342 < Fragment 8 > T GLY394
+
+##########################################
+[+] Parsed structure file tfrc_7_dldesign_0_best (3 chains, 394 residues)
+[+] No. of intermolecular contacts: 6
+[+] No. of charged-charged contacts: 0.0
+[+] No. of charged-polar contacts: 3.0
+[+] No. of charged-apolar contacts: 3.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 0.0
+[+] No. of apolar-apolar contacts: 0.0
+[+] Percentage of apolar NIS residues: 39.59
+[+] Percentage of charged NIS residues: 23.21
+[++] Predicted binding affinity (kcal.mol-1):     -5.6
+[++] Predicted dissociation constant (M) at 25.0˚C:  7.3e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER122
+	L ASP123 < Fragment 1 > L LYS226
+	T ASN231 < Fragment 2 > T ARG241
+	T LEU243 < Fragment 3 > T THR261
+	T VAL263 < Fragment 4 > T LYS266
+	T LEU268 < Fragment 5 > T VAL291
+	T ILE293 < Fragment 6 > T SER310
+	T LEU312 < Fragment 7 > T LYS340
+	T SER342 < Fragment 8 > T GLY394
+
+##########################################
+[+] Parsed structure file tfrc_1_dldesign_0_best (3 chains, 394 residues)
+[+] No. of intermolecular contacts: 52
+[+] No. of charged-charged contacts: 9.0
+[+] No. of charged-polar contacts: 6.0
+[+] No. of charged-apolar contacts: 14.0
+[+] No. of polar-polar contacts: 4.0
+[+] No. of apolar-polar contacts: 9.0
+[+] No. of apolar-apolar contacts: 10.0
+[+] Percentage of apolar NIS residues: 38.51
+[+] Percentage of charged NIS residues: 22.30
+[++] Predicted binding affinity (kcal.mol-1):     -9.2
+[++] Predicted dissociation constant (M) at 25.0˚C:  1.9e-07
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER116
+	L ASP117 < Fragment 1 > L LYS222
+	T ASN227 < Fragment 2 > T THR257
+	T VAL259 < Fragment 3 > T LYS262
+	T LEU264 < Fragment 4 > T VAL287
+	T ILE289 < Fragment 5 > T SER306
+	T LEU308 < Fragment 6 > T LYS336
+	T SER338 < Fragment 7 > T SER364
+	T ASP366 < Fragment 8 > T GLY390
+
+##########################################
+[+] Parsed structure file tfrc_18_dldesign_0_best (3 chains, 390 residues)
+[+] No. of intermolecular contacts: 58
+[+] No. of charged-charged contacts: 6.0
+[+] No. of charged-polar contacts: 6.0
+[+] No. of charged-apolar contacts: 16.0
+[+] No. of polar-polar contacts: 2.0
+[+] No. of apolar-polar contacts: 11.0
+[+] No. of apolar-apolar contacts: 17.0
+[+] Percentage of apolar NIS residues: 39.06
+[+] Percentage of charged NIS residues: 24.24
+[++] Predicted binding affinity (kcal.mol-1):     -9.6
+[++] Predicted dissociation constant (M) at 25.0˚C:  9.6e-08
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER116
+	L ASP117 < Fragment 1 > L LYS222
+	T ASN227 < Fragment 2 > T THR257
+	T THR258 < Fragment 3 > T LYS262
+	T LEU264 < Fragment 4 > T VAL287
+	T ILE289 < Fragment 5 > T SER306
+	T LEU308 < Fragment 6 > T LYS336
+	T SER338 < Fragment 7 > T GLY390
+
+##########################################
+[+] Parsed structure file tfrc_2_dldesign_0_best (3 chains, 390 residues)
+[+] No. of intermolecular contacts: 7
+[+] No. of charged-charged contacts: 1.0
+[+] No. of charged-polar contacts: 2.0
+[+] No. of charged-apolar contacts: 1.0
+[+] No. of polar-polar contacts: 1.0
+[+] No. of apolar-polar contacts: 1.0
+[+] No. of apolar-apolar contacts: 1.0
+[+] Percentage of apolar NIS residues: 39.32
+[+] Percentage of charged NIS residues: 25.08
+[++] Predicted binding affinity (kcal.mol-1):     -5.4
+[++] Predicted dissociation constant (M) at 25.0˚C:  1.2e-04
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER120
+	L ASP121 < Fragment 1 > L LYS228
+	T ASN233 < Fragment 2 > T ARG243
+	T LEU245 < Fragment 3 > T THR263
+	T THR264 < Fragment 4 > T LYS268
+	T LEU270 < Fragment 5 > T VAL293
+	T ILE295 < Fragment 6 > T SER312
+	T LEU314 < Fragment 7 > T LYS342
+	T SER344 < Fragment 8 > T SER370
+	T ASP371 < Fragment 9 > T GLY396
+
+##########################################
+[+] Parsed structure file tfrc_4_dldesign_0_best (3 chains, 396 residues)
+[+] No. of intermolecular contacts: 17
+[+] No. of charged-charged contacts: 2.0
+[+] No. of charged-polar contacts: 2.0
+[+] No. of charged-apolar contacts: 3.0
+[+] No. of polar-polar contacts: 2.0
+[+] No. of apolar-polar contacts: 5.0
+[+] No. of apolar-apolar contacts: 3.0
+[+] Percentage of apolar NIS residues: 37.37
+[+] Percentage of charged NIS residues: 24.24
+[++] Predicted binding affinity (kcal.mol-1):     -6.8
+[++] Predicted dissociation constant (M) at 25.0˚C:  9.5e-06
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER115
+	L ASP116 < Fragment 1 > L LYS225
+	T ASN230 < Fragment 2 > T ARG240
+	T LEU242 < Fragment 3 > T THR260
+	T THR261 < Fragment 4 > T LYS265
+	T LEU267 < Fragment 5 > T VAL290
+	T VAL291 < Fragment 6 > T SER309
+	T LEU311 < Fragment 7 > T LYS339
+	T SER341 < Fragment 8 > T THR376
+	T CYS377 < Fragment 9 > T GLY393
+
+##########################################
+[+] Parsed structure file tfrc_14_dldesign_0_best (3 chains, 393 residues)
+[+] No. of intermolecular contacts: 56
+[+] No. of charged-charged contacts: 2.0
+[+] No. of charged-polar contacts: 7.0
+[+] No. of charged-apolar contacts: 17.0
+[+] No. of polar-polar contacts: 4.0
+[+] No. of apolar-polar contacts: 13.0
+[+] No. of apolar-apolar contacts: 13.0
+[+] Percentage of apolar NIS residues: 40.00
+[+] Percentage of charged NIS residues: 23.05
+[++] Predicted binding affinity (kcal.mol-1):     -9.3
+[++] Predicted dissociation constant (M) at 25.0˚C:  1.4e-07
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER121
+	L ASP122 < Fragment 1 > L LYS230
+	T ASN235 < Fragment 2 > T ARG246
+	T LEU247 < Fragment 3 > T THR265
+	T VAL267 < Fragment 4 > T LYS270
+	T LEU272 < Fragment 5 > T VAL295
+	T ILE297 < Fragment 6 > T SER314
+	T LEU316 < Fragment 7 > T LYS344
+	T SER346 < Fragment 8 > T THR380
+	T THR381 < Fragment 9 > T GLY398
+
+##########################################
+[+] Parsed structure file tfrc_13_dldesign_0_best (3 chains, 398 residues)
+[+] No. of intermolecular contacts: 54
+[+] No. of charged-charged contacts: 12.0
+[+] No. of charged-polar contacts: 9.0
+[+] No. of charged-apolar contacts: 18.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 3.0
+[+] No. of apolar-apolar contacts: 12.0
+[+] Percentage of apolar NIS residues: 40.48
+[+] Percentage of charged NIS residues: 25.85
+[++] Predicted binding affinity (kcal.mol-1):     -8.4
+[++] Predicted dissociation constant (M) at 25.0˚C:  6.6e-07
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER120
+	L ASP121 < Fragment 1 > L LYS226
+	T ASN231 < Fragment 2 > T THR261
+	T VAL263 < Fragment 3 > T LYS266
+	T LEU268 < Fragment 4 > T VAL291
+	T ILE293 < Fragment 5 > T SER310
+	T LEU312 < Fragment 6 > T LYS340
+	T SER342 < Fragment 7 > T SER367
+	T ASP369 < Fragment 8 > T GLY394
+
+##########################################
+[+] Parsed structure file tfrc_6_dldesign_0_best (3 chains, 394 residues)
+[+] No. of intermolecular contacts: 10
+[+] No. of charged-charged contacts: 3.0
+[+] No. of charged-polar contacts: 1.0
+[+] No. of charged-apolar contacts: 3.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 1.0
+[+] No. of apolar-apolar contacts: 2.0
+[+] Percentage of apolar NIS residues: 38.72
+[+] Percentage of charged NIS residues: 24.58
+[++] Predicted binding affinity (kcal.mol-1):     -6.1
+[++] Predicted dissociation constant (M) at 25.0˚C:  3.2e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER114
+	L ASP115 < Fragment 1 > L LYS223
+	T ASN228 < Fragment 2 > T ARG238
+	T LEU240 < Fragment 3 > T THR258
+	T THR259 < Fragment 4 > T LYS263
+	T LEU265 < Fragment 5 > T VAL288
+	T ILE290 < Fragment 6 > T SER307
+	T LEU309 < Fragment 7 > T LYS337
+	T SER339 < Fragment 8 > T SER364
+	T ASP366 < Fragment 9 > T GLY391
+
+##########################################
+[+] Parsed structure file tfrc_11_dldesign_0_best (3 chains, 391 residues)
+[+] No. of intermolecular contacts: 28
+[+] No. of charged-charged contacts: 6.0
+[+] No. of charged-polar contacts: 5.0
+[+] No. of charged-apolar contacts: 4.0
+[+] No. of polar-polar contacts: 2.0
+[+] No. of apolar-polar contacts: 5.0
+[+] No. of apolar-apolar contacts: 6.0
+[+] Percentage of apolar NIS residues: 38.69
+[+] Percentage of charged NIS residues: 21.97
+[++] Predicted binding affinity (kcal.mol-1):     -7.4
+[++] Predicted dissociation constant (M) at 25.0˚C:  3.8e-06
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER120
+	L ASP121 < Fragment 1 > L LYS229
+	T ASN234 < Fragment 2 > T ARG245
+	T LEU246 < Fragment 3 > T THR264
+	T VAL266 < Fragment 4 > T LYS269
+	T LEU271 < Fragment 5 > T VAL294
+	T ILE296 < Fragment 6 > T SER313
+	T LEU315 < Fragment 7 > T LYS343
+	T SER345 < Fragment 8 > T THR379
+	T THR380 < Fragment 9 > T GLY397
+
+##########################################
+[+] Parsed structure file tfrc_15_dldesign_0_best (3 chains, 397 residues)
+[+] No. of intermolecular contacts: 55
+[+] No. of charged-charged contacts: 9.0
+[+] No. of charged-polar contacts: 6.0
+[+] No. of charged-apolar contacts: 11.0
+[+] No. of polar-polar contacts: 2.0
+[+] No. of apolar-polar contacts: 14.0
+[+] No. of apolar-apolar contacts: 13.0
+[+] Percentage of apolar NIS residues: 39.00
+[+] Percentage of charged NIS residues: 24.67
+[++] Predicted binding affinity (kcal.mol-1):    -10.0
+[++] Predicted dissociation constant (M) at 25.0˚C:  4.7e-08
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER118
+	L ASP119 < Fragment 1 > L LYS225
+	T ASN230 < Fragment 2 > T ARG240
+	T LEU242 < Fragment 3 > T THR260
+	T THR261 < Fragment 4 > T LYS265
+	T LEU267 < Fragment 5 > T VAL290
+	T ILE292 < Fragment 6 > T SER309
+	T LEU311 < Fragment 7 > T LYS339
+	T SER341 < Fragment 8 > T SER366
+	T ASP368 < Fragment 9 > T GLY393
+
+##########################################
+[+] Parsed structure file tfrc_9_dldesign_0_best (3 chains, 393 residues)
+[+] No. of intermolecular contacts: 10
+[+] No. of charged-charged contacts: 1.0
+[+] No. of charged-polar contacts: 0.0
+[+] No. of charged-apolar contacts: 5.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 1.0
+[+] No. of apolar-apolar contacts: 3.0
+[+] Percentage of apolar NIS residues: 36.70
+[+] Percentage of charged NIS residues: 25.93
+[++] Predicted binding affinity (kcal.mol-1):     -6.3
+[++] Predicted dissociation constant (M) at 25.0˚C:  2.3e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER117
+	L ASP118 < Fragment 1 > L LYS226
+	T ASN231 < Fragment 2 > T ARG241
+	T LEU243 < Fragment 3 > T THR261
+	T THR262 < Fragment 4 > T LYS266
+	T LEU268 < Fragment 5 > T VAL291
+	T ILE293 < Fragment 6 > T SER310
+	T LEU312 < Fragment 7 > T LYS340
+	T SER342 < Fragment 8 > T SER367
+	T ASP369 < Fragment 9 > T GLY394
+
+##########################################
+[+] Parsed structure file tfrc_5_dldesign_0_best (3 chains, 394 residues)
+[+] No. of intermolecular contacts: 4
+[+] No. of charged-charged contacts: 0.0
+[+] No. of charged-polar contacts: 0.0
+[+] No. of charged-apolar contacts: 1.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 1.0
+[+] No. of apolar-apolar contacts: 2.0
+[+] Percentage of apolar NIS residues: 37.63
+[+] Percentage of charged NIS residues: 23.39
+[++] Predicted binding affinity (kcal.mol-1):     -6.0
+[++] Predicted dissociation constant (M) at 25.0˚C:  3.9e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER118
+	L ASP119 < Fragment 1 > L LYS224
+	T ASN229 < Fragment 2 > T ARG239
+	T LEU241 < Fragment 3 > T THR259
+	T VAL261 < Fragment 4 > T LYS264
+	T LEU266 < Fragment 5 > T VAL289
+	T ILE291 < Fragment 6 > T SER308
+	T LEU310 < Fragment 7 > T LYS338
+	T SER340 < Fragment 8 > T SER366
+	T ASP367 < Fragment 9 > T GLY392
+
+##########################################
+[+] Parsed structure file tfrc_19_dldesign_0_best (3 chains, 392 residues)
+[+] No. of intermolecular contacts: 52
+[+] No. of charged-charged contacts: 6.0
+[+] No. of charged-polar contacts: 8.0
+[+] No. of charged-apolar contacts: 17.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 9.0
+[+] No. of apolar-apolar contacts: 12.0
+[+] Percentage of apolar NIS residues: 38.78
+[+] Percentage of charged NIS residues: 23.81
+[++] Predicted binding affinity (kcal.mol-1):     -9.7
+[++] Predicted dissociation constant (M) at 25.0˚C:  7.4e-08
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER114
+	L ASP115 < Fragment 1 > L LYS221
+	T ASN226 < Fragment 2 > T ARG236
+	T LEU238 < Fragment 3 > T THR256
+	T VAL258 < Fragment 4 > T LYS261
+	T LEU263 < Fragment 5 > T VAL286
+	T ILE288 < Fragment 6 > T SER305
+	T LEU307 < Fragment 7 > T LYS335
+	T SER337 < Fragment 8 > T SER362
+	T ASP364 < Fragment 9 > T GLY389
+
+##########################################
+[+] Parsed structure file tfrc_17_dldesign_0_best (3 chains, 389 residues)
+[+] No. of intermolecular contacts: 9
+[+] No. of charged-charged contacts: 0.0
+[+] No. of charged-polar contacts: 1.0
+[+] No. of charged-apolar contacts: 3.0
+[+] No. of polar-polar contacts: 1.0
+[+] No. of apolar-polar contacts: 3.0
+[+] No. of apolar-apolar contacts: 1.0
+[+] Percentage of apolar NIS residues: 37.20
+[+] Percentage of charged NIS residues: 24.57
+[++] Predicted binding affinity (kcal.mol-1):     -6.4
+[++] Predicted dissociation constant (M) at 25.0˚C:  2.1e-05
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER114
+	L ASP115 < Fragment 1 > L LYS219
+	T ASN224 < Fragment 2 > T THR254
+	T THR255 < Fragment 3 > T LYS259
+	T LEU261 < Fragment 4 > T VAL284
+	T ILE286 < Fragment 5 > T SER303
+	T LEU305 < Fragment 6 > T LYS333
+	T SER335 < Fragment 7 > T THR370
+	T CYS371 < Fragment 8 > T GLY387
+
+##########################################
+[+] Parsed structure file tfrc_16_dldesign_0_best (3 chains, 387 residues)
+[+] No. of intermolecular contacts: 4
+[+] No. of charged-charged contacts: 1.0
+[+] No. of charged-polar contacts: 1.0
+[+] No. of charged-apolar contacts: 1.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 0.0
+[+] No. of apolar-apolar contacts: 1.0
+[+] Percentage of apolar NIS residues: 39.19
+[+] Percentage of charged NIS residues: 25.00
+[++] Predicted binding affinity (kcal.mol-1):     -5.4
+[++] Predicted dissociation constant (M) at 25.0˚C:  1.2e-04
+[!] Structure contains gaps:
+	H GLU1 < Fragment 0 > H SER120
+	L ASP121 < Fragment 1 > L LYS226
+	T ASN231 < Fragment 2 > T ARG241
+	T LEU243 < Fragment 3 > T THR261
+	T THR262 < Fragment 4 > T LYS266
+	T LEU268 < Fragment 5 > T VAL291
+	T ILE293 < Fragment 6 > T SER310
+	T LEU312 < Fragment 7 > T LYS340
+	T SER342 < Fragment 8 > T GLY394
+
+##########################################
+[+] Parsed structure file tfrc_0_dldesign_0_best (3 chains, 394 residues)
+[+] No. of intermolecular contacts: 27
+[+] No. of charged-charged contacts: 5.0
+[+] No. of charged-polar contacts: 2.0
+[+] No. of charged-apolar contacts: 9.0
+[+] No. of polar-polar contacts: 0.0
+[+] No. of apolar-polar contacts: 6.0
+[+] No. of apolar-apolar contacts: 5.0
+[+] Percentage of apolar NIS residues: 38.38
+[+] Percentage of charged NIS residues: 23.57
+[++] Predicted binding affinity (kcal.mol-1):     -8.3
+[++] Predicted dissociation constant (M) at 25.0˚C:  8.9e-07
