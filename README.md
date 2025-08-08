@@ -23,14 +23,13 @@ See the [to do list](RFAntibody-ToDo.md) for specific itemes needed to complete 
 ## Team Members
 | Name | Role |
 |:-----|:-----|
-| TBD | Writer |
-| TBD | Coder |
-| TBD | Logo Designer, Coder |
-| TBD | Data Wrangler |
-| TBD | Coder |
-| TBD | Coder |
-| Todd Smith | Leader |
+| Aamir "Moh" Hussain | Coder |
 | Eric Olson | Leader |
+| Jessica Adjoyi | Coder |
+| Michael Wu | Logo, Coder |
+| Rebecca Lind | Coder |
+| Todd Smith | Leader |
+| Wengang Zhang | Coder |
 
 ## Compute Resources
 ### General Architecture
