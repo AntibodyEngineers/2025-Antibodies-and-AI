@@ -1,0 +1,96 @@
+    1  bash /home/include/setup.sh
+    2  apt-get install less
+    3  less
+    4  poetry run pip install biotite
+    5  cp /home/scripts/rfdiffusion_inference.py /home/src/rfantibody/rfdiffusion/
+    6  vi /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh
+    7  vi /home/scripts/examples/rf2/ab_pdb_example.sh
+    8  vi /home/src/rfantibody/rf2/config/base.yaml 
+    9  ls
+   10  exit
+   11  poetry run python /home/scripts/util/chothia2HLT.py scripts/examples/example_inputs/hu-4D5-8_Fv.pdb --heavy H --light L --target T --output myHLT.pdb
+   12  ls
+   13  rm myHLT.pdb 
+   14  ls
+   15  exit
+   16  poetry run pip list
+   17  docker
+   18  exit
+   19  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   20  less /home/scripts/examples/example_inputs/hu-4D5-8_Fv.pdb
+   21  ls
+   22  less myHLT.pdb 
+   23  less /home/scripts/examples/example_inputs/hu-4D5-8_Fv.pdb
+   24  less /home/scripts/examples/example_inputs/h-NbBCII10.pdb 
+   25  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   26  bash /home/scripts/examples/rfdiffusion/antibody_pdbdesign.sh 
+   27  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   28  clear
+   29  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   30  less /home/src/rfantibody/rfdiffusion/rfdiffusion_inference.py
+   31  ls 
+   32  ls gfp_inputs/
+   33  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   34  ls gfp_inputs/
+   35  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   36  ls gfp_outputs/
+   37  bash /home/scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   38  ls
+   39  find . -name *gfp*
+   40  find . -name "*gfp*"
+   41  poetry run python /home/scripts/proteinmpnn_interface_design.py --help
+   42  ls
+   43  mkdir gfp_proteinmpnn
+   44  poetry run python /home/scripts/proteinmpnn_interface_design.py \
+   45  poetry run python /home/scripts/proteinmpnn_interface_design.py -pdbdir gfp_inputs -outpdbdir gfp_proteinmpnn/
+   46  ls
+   47  ls gfp_proteinmpnn/
+   48  poetry run python /home/scripts/proteinmpnn_interface_design.py -pdbdir gfp_outputs -outpdbdir gfp_proteinmpnn/
+   49  ls
+   50  ls gfp_proteinmpnn/
+   51  rm gfp_proteinmpnn/gfpHT_dldesign_0.pdb 
+   52  rm gfp_proteinmpnn/gfpVHH_dldesign_0.pdb 
+   53  rm gfp_proteinmpnn/gfp_ag_dldesign_0.pdb 
+   54  ls
+   55  less /home/scripts/examples/rf2/ab_pdb_example.sh
+   56  mkdir gfp_rf2
+   57  poetry run python /home/scripts/rf2_predict.py input.pdb_dir=gfp_proteinmpnn output.pdb_dir=gfp_rf2/
+   58  ls
+   59  ls gfp_rf2/
+   60  cd gfp_rf2/
+   61  gzip *
+   62  ls 
+   63  cd ..
+   64  gzip -r -X gfp_rf2.zip gfp_rf2/
+   65  cd gfp_rf2/
+   66  ls
+   67  gunzip *
+   68  cd ..
+   69  ls
+   70  cat > add_pdb_header.sh
+   71  bash add_pdb_header.sh gfp_rf2/*.pdb
+   72  less gfp_rf2/nb_gfp_des_0_dldesign_0_best.pdb 
+   73  cd gfp_rf2/
+   74  gzip *
+   75  cd ..
+   76  apt-get zip
+   77  apt install zip
+   78  zip -r gfp_rf2.zip gfp_rf2/
+   79  ls
+   80  exit
+   81  ls
+   82  history
+   83  poetry
+   84  ls
+   85  docker ps
+   86  history
+   87  less scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   88  less scripts/rf2_predict.py 
+   89  ls
+   90  less gfp_proteinmpnn/
+   91  ls gfp_proteinmpnn/
+   92  ls gfp_outputs/
+   93  ls gfp_outputs/traj/
+   94  ls
+   95  less scripts/examples/rfdiffusion/antibody_gfp_design.sh 
+   96  history
