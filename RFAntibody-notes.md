@@ -187,7 +187,8 @@ docker start -ai rfantibody        # start + attach
 ```bash
 docker start rfantibody
 docker exec -it rfantibody /bin/bash
-docker ps
+docker ps               # see running containers
+docker ps -a            # see all containers
 docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
 ```
 
