@@ -189,6 +189,7 @@ docker start rfantibody
 docker exec -it rfantibody /bin/bash
 docker ps               # see running containers
 docker ps -a            # see all containers
+docker ps -a -s         # see all containers and their sizes
 docker run --name rfantibody --gpus all -v .:/home --memory 10g -it rfantibody
 ```
 
